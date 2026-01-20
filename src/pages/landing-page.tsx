@@ -62,15 +62,15 @@ export function LandingPage() {
             <img
               src="/images/ecscs-logo.png"
               alt="ECSCS"
-              className="w-10 h-10 object-contain"
+              className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
             />
-            <span className="text-lg font-semibold text-foreground">{t('header.title')}</span>
+            <span className="text-base sm:text-lg font-semibold text-foreground hidden xs:inline">{t('header.title')}</span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <LanguageSwitcher />
             <Link
               to="/dashboard"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-xs sm:text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {t('landing.nav.organizerLogin')}
             </Link>
@@ -79,7 +79,7 @@ export function LandingPage() {
       </nav>
 
       {/* Hero Section - Logo and CTA */}
-      <section className="relative pt-2 pb-4 md:pt-4 md:pb-6 overflow-hidden">
+      <section className="relative pt-14 pb-4 sm:pt-16 md:pt-4 md:pb-6 overflow-hidden">
         {/* Ethiopian traditional pattern background */}
         <div
           className="absolute inset-0 pointer-events-none opacity-30"
@@ -93,39 +93,39 @@ export function LandingPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background pointer-events-none" />
 
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          {/* Tournament Logo - 60% bigger with transparent background blend */}
+          {/* Tournament Logo - responsive sizing for mobile */}
           <img
             src="/images/ecscs-logo.png"
             alt="ECSCS Soccer Tournament 2026 - 30 Years of Unity, Sports & Culture"
-            className="mx-auto w-[26rem] h-[26rem] md:w-[32rem] md:h-[32rem] lg:w-[38rem] lg:h-[38rem] object-contain mb-2 mix-blend-multiply"
+            className="mx-auto w-[16rem] h-[16rem] sm:w-[20rem] sm:h-[20rem] md:w-[28rem] md:h-[28rem] lg:w-[34rem] lg:h-[34rem] object-contain mb-2 mix-blend-multiply"
           />
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-4">
+          <p className="text-base sm:text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-4 px-2">
             {t('landing.hero.subtitle')}
           </p>
 
           {/* Event Info */}
-          <div className="flex flex-wrap justify-center gap-6 mb-6 text-lg md:text-xl text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-primary" />
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-6 mb-6 text-base sm:text-lg md:text-xl text-muted-foreground">
+            <div className="flex items-center justify-center gap-2">
+              <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
               <span className="font-medium">{t('landing.hero.date')}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-accent" />
+            <div className="flex items-center justify-center gap-2">
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
               <span className="font-medium">{t('landing.hero.location')}</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/volunteer-signup">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+            <Link to="/volunteer-signup" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto gap-2">
-                <Heart className="w-5 h-5" />
+                <Heart className="w-4 h-4 sm:w-5 sm:h-5" />
                 {t('landing.hero.volunteerCta')}
               </Button>
             </Link>
-            <a href="#about">
+            <a href="#about" className="w-full sm:w-auto">
               <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                 {t('landing.hero.learnMore')}
                 <ArrowRight className="w-4 h-4" />
@@ -139,34 +139,34 @@ export function LandingPage() {
       <EthiopianBorder />
 
       {/* About Section */}
-      <section id="about" className="relative py-16 md:py-24 bg-muted/30 overflow-hidden">
+      <section id="about" className="relative py-12 sm:py-16 md:py-24 bg-muted/30 overflow-hidden">
         {/* Subtle pattern background */}
         <div className="absolute inset-0 pointer-events-none opacity-50">
           <EthiopianPattern className="absolute inset-0" opacity={0.02} />
         </div>
         <div className="relative max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t('landing.about.title')}
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
               {t('landing.about.description')}
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl p-8 border border-border shadow-sm">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                <Globe className="w-6 h-6 text-primary" />
+          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-border shadow-sm">
+            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
+                <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-foreground">
+                <h3 className="text-lg sm:text-xl font-semibold text-foreground">
                   {t('landing.about.historyTitle')}
                 </h3>
-                <p className="text-sm text-muted-foreground">{t('landing.about.historySubtitle')}</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">{t('landing.about.historySubtitle')}</p>
               </div>
             </div>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
               {t('landing.about.historyText')}
             </p>
           </div>
@@ -174,30 +174,30 @@ export function LandingPage() {
       </section>
 
       {/* Event Highlights Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-12 sm:py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t('landing.highlights.title')}
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-sm sm:text-base text-muted-foreground">
               {t('landing.highlights.subtitle')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {eventHighlights.map((highlight, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-xl p-6 border border-border hover:border-primary/30 hover:shadow-md transition-all duration-300"
+                className="group bg-card rounded-lg sm:rounded-xl p-4 sm:p-6 border border-border hover:border-primary/30 hover:shadow-md transition-all duration-300"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-4">
-                  <highlight.icon className="w-6 h-6 text-primary" />
+                <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-3 sm:mb-4">
+                  <highlight.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
+                <h3 className="text-sm sm:text-lg font-semibold text-foreground mb-1 sm:mb-2">
                   {t(highlight.titleKey)}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   {t(highlight.descKey)}
                 </p>
               </div>
@@ -210,33 +210,33 @@ export function LandingPage() {
       <EthiopianBorder />
 
       {/* Key Information Section */}
-      <section className="relative py-16 md:py-24 bg-primary/5 overflow-hidden">
+      <section className="relative py-12 sm:py-16 md:py-24 bg-primary/5 overflow-hidden">
         {/* Subtle pattern background */}
         <div className="absolute inset-0 pointer-events-none">
           <EthiopianPattern className="absolute inset-0" opacity={0.03} />
         </div>
         <div className="relative max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t('landing.info.title')}
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-card rounded-xl p-6 border border-border text-center">
-              <Calendar className="w-8 h-8 text-primary mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">{t('landing.info.when.title')}</h3>
-              <p className="text-muted-foreground text-sm">{t('landing.info.when.details')}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-card rounded-lg sm:rounded-xl p-5 sm:p-6 border border-border text-center">
+              <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-primary mx-auto mb-3 sm:mb-4" />
+              <h3 className="font-semibold text-foreground mb-1 sm:mb-2">{t('landing.info.when.title')}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">{t('landing.info.when.details')}</p>
             </div>
-            <div className="bg-card rounded-xl p-6 border border-border text-center">
-              <MapPin className="w-8 h-8 text-accent mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">{t('landing.info.where.title')}</h3>
-              <p className="text-muted-foreground text-sm">{t('landing.info.where.details')}</p>
+            <div className="bg-card rounded-lg sm:rounded-xl p-5 sm:p-6 border border-border text-center">
+              <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-accent mx-auto mb-3 sm:mb-4" />
+              <h3 className="font-semibold text-foreground mb-1 sm:mb-2">{t('landing.info.where.title')}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">{t('landing.info.where.details')}</p>
             </div>
-            <div className="bg-card rounded-xl p-6 border border-border text-center">
-              <Star className="w-8 h-8 text-secondary mx-auto mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">{t('landing.info.what.title')}</h3>
-              <p className="text-muted-foreground text-sm">{t('landing.info.what.details')}</p>
+            <div className="bg-card rounded-lg sm:rounded-xl p-5 sm:p-6 border border-border text-center">
+              <Star className="w-6 h-6 sm:w-8 sm:h-8 text-secondary mx-auto mb-3 sm:mb-4" />
+              <h3 className="font-semibold text-foreground mb-1 sm:mb-2">{t('landing.info.what.title')}</h3>
+              <p className="text-muted-foreground text-xs sm:text-sm">{t('landing.info.what.details')}</p>
             </div>
           </div>
         </div>
@@ -246,27 +246,27 @@ export function LandingPage() {
       <EthiopianBorder />
 
       {/* Volunteer CTA Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-12 sm:py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 md:p-12 text-center overflow-hidden">
+          <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center overflow-hidden">
             {/* Ethiopian pattern overlay on CTA */}
             <div className="absolute inset-0 pointer-events-none">
               <EthiopianPattern className="absolute inset-0" opacity={0.08} />
             </div>
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
+            <div className="absolute top-0 right-0 w-24 sm:w-40 h-24 sm:h-40 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-20 sm:w-32 h-20 sm:h-32 bg-white/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
 
             <div className="relative z-10">
-              <div className="flex justify-center mb-6">
-                <div className="p-4 bg-white/20 rounded-full">
-                  <Heart className="w-10 h-10 text-white" />
+              <div className="flex justify-center mb-4 sm:mb-6">
+                <div className="p-3 sm:p-4 bg-white/20 rounded-full">
+                  <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">
                 {t('landing.volunteer.title')}
               </h2>
-              <p className="text-white/90 max-w-xl mx-auto mb-8">
+              <p className="text-sm sm:text-base text-white/90 max-w-xl mx-auto mb-6 sm:mb-8">
                 {t('landing.volunteer.description')}
               </p>
               <Link to="/volunteer-signup">
@@ -284,35 +284,35 @@ export function LandingPage() {
       <EthiopianBorder />
 
       {/* Footer */}
-      <footer className="bg-card border-t border-border py-12">
+      <footer className="bg-card border-t border-border py-8 sm:py-12">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
             {/* Logo and Description */}
-            <div>
-              <div className="flex items-center gap-3 mb-4">
+            <div className="sm:col-span-2 md:col-span-1">
+              <div className="flex items-center gap-3 mb-3 sm:mb-4">
                 <img
                   src="/images/ecscs-logo.png"
                   alt="ECSCS"
-                  className="w-12 h-12 object-contain"
+                  className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
                 />
-                <span className="text-lg font-semibold text-foreground">{t('header.title')}</span>
+                <span className="text-base sm:text-lg font-semibold text-foreground">{t('header.title')}</span>
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 {t('landing.footer.description')}
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold text-foreground mb-4">{t('landing.footer.quickLinks')}</h4>
+              <h4 className="font-semibold text-foreground mb-3 sm:mb-4">{t('landing.footer.quickLinks')}</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <a href="#about" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {t('landing.about.title')}
                   </a>
                 </li>
                 <li>
-                  <Link to="/volunteer-signup" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link to="/volunteer-signup" className="text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors">
                     {t('landing.hero.volunteerCta')}
                   </Link>
                 </li>
@@ -321,11 +321,11 @@ export function LandingPage() {
 
             {/* Contact */}
             <div>
-              <h4 className="font-semibold text-foreground mb-4">{t('landing.footer.contact')}</h4>
-              <p className="text-sm text-muted-foreground mb-2">{t('landing.footer.email')}</p>
+              <h4 className="font-semibold text-foreground mb-3 sm:mb-4">{t('landing.footer.contact')}</h4>
+              <p className="text-xs sm:text-sm text-muted-foreground mb-2">{t('landing.footer.email')}</p>
               <Link
                 to="/dashboard"
-                className="text-sm text-primary hover:underline"
+                className="text-xs sm:text-sm text-primary hover:underline"
               >
                 {t('landing.nav.organizerLogin')}
               </Link>
@@ -333,8 +333,8 @@ export function LandingPage() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
+          <div className="pt-6 sm:pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
               {t('landing.footer.copyright')}
             </p>
             <div className="flex items-center gap-4">
