@@ -82,7 +82,7 @@ export function LandingPage() {
       <section className="relative pt-2 pb-4 md:pt-4 md:pb-6 overflow-hidden">
         {/* Ethiopian traditional pattern background */}
         <div
-          className="absolute inset-0 pointer-events-none opacity-20"
+          className="absolute inset-0 pointer-events-none opacity-30"
           style={{
             backgroundImage: 'url(/images/ethiopian-traditional-pattern.png)',
             backgroundRepeat: 'repeat',
