@@ -78,38 +78,35 @@ export function LandingPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-        {/* Ethiopian pattern background */}
-        <div className="absolute inset-0 pointer-events-none">
-          <EthiopianPattern className="absolute inset-0" opacity={0.04} />
-        </div>
+      {/* Hero Section - Logo and CTA */}
+      <section className="relative pt-2 pb-4 md:pt-4 md:pb-6 overflow-hidden">
+        {/* Ethiopian traditional pattern background */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-20"
+          style={{
+            backgroundImage: 'url(/images/ethiopian-traditional-pattern.png)',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '200px',
+          }}
+        />
         {/* Gradient overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background pointer-events-none" />
-        {/* Decorative color blurs */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background pointer-events-none" />
 
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          {/* Tournament Logo - Prominent Display */}
-          <div className="mb-8">
-            <img
-              src="/images/ecscs-logo.png"
-              alt="ECSCS Soccer Tournament 2026 - 30 Years of Unity, Sports & Culture"
-              className="mx-auto w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain"
-            />
-          </div>
+          {/* Tournament Logo - 60% bigger with transparent background blend */}
+          <img
+            src="/images/ecscs-logo.png"
+            alt="ECSCS Soccer Tournament 2026 - 30 Years of Unity, Sports & Culture"
+            className="mx-auto w-[26rem] h-[26rem] md:w-[32rem] md:h-[32rem] lg:w-[38rem] lg:h-[38rem] object-contain mb-2 mix-blend-multiply"
+          />
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-4">
             {t('landing.hero.subtitle')}
           </p>
 
           {/* Event Info */}
-          <div className="flex flex-wrap justify-center gap-6 mb-10 text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-6 mb-6 text-lg md:text-xl text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-5 h-5 text-primary" />
               <span className="font-medium">{t('landing.hero.date')}</span>

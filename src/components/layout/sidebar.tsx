@@ -50,11 +50,20 @@ export function Sidebar() {
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
+        {/* Ethiopian traditional pattern background */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-20"
+          style={{
+            backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+            backgroundRepeat: 'repeat',
+            backgroundSize: '150px',
+          }}
+        />
         {/* Subtle accent border on right edge */}
-        <div className="absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-primary/20 via-secondary/20 to-accent/20"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-px bg-gradient-to-b from-primary/20 via-secondary/20 to-accent/20 z-10"></div>
 
         {/* Main sidebar content */}
-        <div className="h-full bg-card border-r border-border">
+        <div className="relative h-full bg-card/95 border-r border-border">
           {/* Mobile header */}
           <div className="flex h-16 items-center justify-between border-b border-border px-4 lg:hidden">
             {/* Subtle accent line at top */}
@@ -77,8 +86,8 @@ export function Sidebar() {
             </button>
           </div>
 
-          {/* Desktop header - refined divider style */}
-          <div className="hidden lg:flex items-center justify-center py-4 border-b border-border">
+          {/* Desktop header - aligned with main header height (h-16 + accent line) */}
+          <div className="hidden lg:flex items-center justify-center h-[calc(4rem+3px)] border-b border-border">
             <div className="flex items-center gap-2">
               <div className="h-px w-8 bg-gradient-to-r from-transparent to-primary/30"></div>
               <span className="text-xs font-medium text-muted-foreground uppercase tracking-widest">Menu</span>

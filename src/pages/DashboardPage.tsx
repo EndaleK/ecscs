@@ -153,7 +153,7 @@ function OverallProgress() {
 
 export function DashboardPage() {
   return (
-    <div className="min-h-full bg-background">
+    <div className="min-h-full">
       <div className="p-6 space-y-6 max-w-7xl mx-auto">
         {/* Welcome Section */}
         <WelcomeSection />

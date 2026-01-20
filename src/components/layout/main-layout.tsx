@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Header } from './header';
 import { Sidebar } from './sidebar';
 import { useSettingsStore } from '../../stores/settings-store';
-import { EthiopianPattern } from '@/components/ui/ethiopian-pattern';
 
 interface MainLayoutProps {
   notificationCount?: number;
@@ -34,12 +33,17 @@ export function MainLayout({ notificationCount = 0 }: MainLayoutProps) {
 
   return (
     <div className="relative flex h-screen bg-background">
-      {/* Ethiopian pattern background */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <EthiopianPattern className="absolute inset-0" opacity={0.025} />
-      </div>
+      {/* Ethiopian traditional pattern background */}
+      <div
+        className="fixed inset-0 pointer-events-none z-0 opacity-20"
+        style={{
+          backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+          backgroundRepeat: 'repeat',
+          backgroundSize: '300px',
+        }}
+      />
       {/* Subtle gradient overlay for readability */}
-      <div className="fixed inset-0 bg-gradient-to-br from-background/70 via-background/85 to-background/70 pointer-events-none z-0" />
+      <div className="fixed inset-0 bg-gradient-to-br from-background/80 via-background/90 to-background/80 pointer-events-none z-0" />
 
       {/* Sidebar */}
       <Sidebar />

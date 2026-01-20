@@ -20,17 +20,27 @@ export function SettingsPage() {
   };
 
   return (
-    <div className="p-6 space-y-8 max-w-4xl mx-auto">
+    <div className="flex flex-col h-full">
       {/* Page Header */}
-      <div>
-        <h1 className="text-2xl font-bold text-foreground flex items-center gap-2">
-          <Settings className="h-6 w-6" />
-          {t('settings.title')}
-        </h1>
-        <p className="mt-2 text-muted-foreground">
-          {t('settings.description')}
-        </p>
+      <div className="flex flex-col gap-4 border-b border-border bg-card/80 backdrop-blur-sm px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex items-center gap-3">
+          <div className="p-2 bg-muted rounded-lg">
+            <Settings className="w-6 h-6 text-foreground" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-foreground">
+              {t('settings.title')}
+            </h1>
+            <p className="text-sm text-muted-foreground">
+              {t('settings.description')}
+            </p>
+          </div>
+        </div>
       </div>
+
+      {/* Main Content */}
+      <div className="flex-1 overflow-auto p-6">
+        <div className="space-y-8 max-w-4xl mx-auto">
 
       {/* Settings Form */}
       <section>
@@ -120,6 +130,8 @@ export function SettingsPage() {
           </CardContent>
         </Card>
       </section>
+        </div>
+      </div>
     </div>
   );
 }

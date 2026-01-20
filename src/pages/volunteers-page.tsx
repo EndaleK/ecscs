@@ -156,14 +156,14 @@ export function VolunteersPage() {
   return (
     <div className="h-full flex flex-col">
       {/* Page Header */}
-      <div className="p-6 border-b border-gray-200 bg-white">
+      <div className="flex flex-col gap-4 border-b border-border bg-card/80 backdrop-blur-sm px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-purple-100 rounded-lg">
-            <Users className="w-6 h-6 text-purple-600" />
+          <div className="p-2 bg-accent/10 rounded-lg">
+            <Users className="w-6 h-6 text-accent" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-gray-900">{t('volunteers.pageTitle')}</h1>
-            <p className="text-gray-500">{t('volunteers.pageDescription')}</p>
+            <h1 className="text-2xl font-bold text-foreground">{t('volunteers.pageTitle')}</h1>
+            <p className="text-sm text-muted-foreground">{t('volunteers.pageDescription')}</p>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@ export function VolunteersPage() {
       {/* Main Content */}
       <div className="flex-1 flex overflow-hidden">
         {/* Volunteer List */}
-        <div className="w-1/2 border-r border-gray-200 p-6 overflow-y-auto">
+        <div className="w-1/2 border-r border-border p-6 overflow-y-auto">
           <VolunteerList
             onVolunteerSelect={handleVolunteerSelect}
             onAddVolunteer={handleAddVolunteer}
@@ -179,12 +179,12 @@ export function VolunteersPage() {
         </div>
 
         {/* Volunteer Detail / Add Form */}
-        <div className="w-1/2 p-6 overflow-y-auto bg-gray-50">
+        <div className="w-1/2 p-6 overflow-y-auto bg-muted/30">
           {showAddForm || isEditing ? (
             // Add/Edit Volunteer Form
-            <div className="bg-white rounded-lg border border-gray-200 p-6">
+            <div className="bg-card rounded-lg border border-border p-6">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-lg font-semibold text-gray-900">
+                <h2 className="text-lg font-semibold text-foreground">
                   {isEditing ? t('volunteers.editVolunteer') : t('volunteers.addVolunteer')}
                 </h2>
                 <button
@@ -192,7 +192,7 @@ export function VolunteersPage() {
                     setShowAddForm(false);
                     setIsEditing(false);
                   }}
-                  className="p-1 text-gray-400 hover:text-gray-600"
+                  className="p-1 text-muted-foreground/70 hover:text-muted-foreground"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -201,46 +201,46 @@ export function VolunteersPage() {
               <div className="space-y-4">
                 {/* Name */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-foreground mb-1">
                     {t('volunteers.name')}
                   </label>
                   <input
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-foreground mb-1">
                     {t('volunteers.email')}
                   </label>
                   <input
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
 
                 {/* Phone */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-foreground mb-1">
                     {t('volunteers.phone')}
                   </label>
                   <input
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    className="w-full px-3 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
 
                 {/* Skills */}
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-foreground mb-2">
                     {t('volunteers.skills')}
                   </label>
                   <div className="flex flex-wrap gap-2">
@@ -253,7 +253,7 @@ export function VolunteersPage() {
                           'px-3 py-1 rounded-full text-sm font-medium transition-colors',
                           formData.skills.includes(skill)
                             ? 'bg-primary text-white'
-                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            : 'bg-muted text-foreground hover:bg-muted'
                         )}
                       >
                         {skill}
@@ -263,7 +263,7 @@ export function VolunteersPage() {
                 </div>
 
                 {/* Actions */}
-                <div className="flex justify-end gap-2 pt-4 border-t border-gray-200">
+                <div className="flex justify-end gap-2 pt-4 border-t border-border">
                   <Button
                     variant="outline"
                     onClick={() => {
@@ -286,7 +286,7 @@ export function VolunteersPage() {
             // Volunteer Detail View
             <div className="space-y-6">
               {/* Volunteer Info Card */}
-              <div className="bg-white rounded-lg border border-gray-200 p-6">
+              <div className="bg-card rounded-lg border border-border p-6">
                 <div className="flex items-start justify-between">
                   <div className="flex items-start gap-4">
                     {/* Avatar */}
@@ -304,13 +304,13 @@ export function VolunteersPage() {
                         .slice(0, 2)}
                     </div>
                     <div>
-                      <h2 className="text-xl font-bold text-gray-900">{selectedVolunteer.name}</h2>
-                      <div className="flex items-center gap-1 text-gray-500 mt-1">
+                      <h2 className="text-xl font-bold text-foreground">{selectedVolunteer.name}</h2>
+                      <div className="flex items-center gap-1 text-muted-foreground mt-1">
                         <Mail className="w-4 h-4" />
                         <span>{selectedVolunteer.email}</span>
                       </div>
                       {selectedVolunteer.phone && (
-                        <div className="flex items-center gap-1 text-gray-500">
+                        <div className="flex items-center gap-1 text-muted-foreground">
                           <Phone className="w-4 h-4" />
                           <span>{selectedVolunteer.phone}</span>
                         </div>
@@ -332,12 +332,12 @@ export function VolunteersPage() {
                 {/* Skills */}
                 {selectedVolunteer.skills.length > 0 && (
                   <div className="mt-4">
-                    <h3 className="text-sm font-medium text-gray-700 mb-2">{t('volunteers.skills')}</h3>
+                    <h3 className="text-sm font-medium text-foreground mb-2">{t('volunteers.skills')}</h3>
                     <div className="flex flex-wrap gap-2">
                       {selectedVolunteer.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm"
+                          className="px-2 py-1 bg-muted text-foreground rounded text-sm"
                         >
                           {skill}
                         </span>
@@ -349,15 +349,15 @@ export function VolunteersPage() {
                 {/* Availability */}
                 {selectedVolunteer.availability.length > 0 && (
                   <div className="mt-4">
-                    <h3 className="text-sm font-medium text-gray-700 mb-2">
+                    <h3 className="text-sm font-medium text-foreground mb-2">
                       {t('volunteers.availability')}
                     </h3>
                     <div className="space-y-1">
                       {selectedVolunteer.availability.map((item, index) => (
-                        <div key={index} className="flex items-center gap-2 text-sm text-gray-600">
+                        <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Calendar className="w-4 h-4" />
                           <span>{formatDate(item.date, 'MMM d, yyyy')}</span>
-                          <span className="text-gray-400">
+                          <span className="text-muted-foreground/70">
                             {item.startTime} - {item.endTime}
                           </span>
                         </div>
@@ -367,7 +367,7 @@ export function VolunteersPage() {
                 )}
 
                 {/* Registration Date */}
-                <div className="mt-4 pt-4 border-t border-gray-100 text-sm text-gray-500">
+                <div className="mt-4 pt-4 border-t border-border/50 text-sm text-muted-foreground">
                   {t('volunteers.registeredOn', {
                     date: formatDate(selectedVolunteer.registeredAt, 'MMMM d, yyyy'),
                   })}
@@ -375,9 +375,9 @@ export function VolunteersPage() {
               </div>
 
               {/* Assigned Shifts */}
-              <div className="bg-white rounded-lg border border-gray-200 p-6">
+              <div className="bg-card rounded-lg border border-border p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold text-gray-900">
+                  <h3 className="text-lg font-semibold text-foreground">
                     {t('volunteers.assignedShifts', { count: selectedVolunteer.assignedShifts.length })}
                   </h3>
                   <Button size="sm" onClick={() => setShowAssignModal(true)}>
@@ -396,11 +396,11 @@ export function VolunteersPage() {
                       return (
                         <div
                           key={taskId}
-                          className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
+                          className="flex items-center justify-between p-3 bg-muted/50 rounded-lg"
                         >
                           <div>
-                            <h4 className="font-medium text-gray-900">{task.title}</h4>
-                            <div className="flex items-center gap-3 text-sm text-gray-500 mt-1">
+                            <h4 className="font-medium text-foreground">{task.title}</h4>
+                            <div className="flex items-center gap-3 text-sm text-muted-foreground mt-1">
                               {category && (
                                 <span
                                   className="px-2 py-0.5 rounded text-xs font-medium"
@@ -428,8 +428,8 @@ export function VolunteersPage() {
                     })}
                   </div>
                 ) : (
-                  <div className="text-center py-8 text-gray-500">
-                    <Briefcase className="w-10 h-10 mx-auto mb-2 text-gray-300" />
+                  <div className="text-center py-8 text-muted-foreground">
+                    <Briefcase className="w-10 h-10 mx-auto mb-2 text-muted-foreground/50" />
                     <p>{t('volunteers.noShiftsAssigned')}</p>
                   </div>
                 )}
@@ -437,8 +437,8 @@ export function VolunteersPage() {
             </div>
           ) : (
             // No Selection
-            <div className="flex flex-col items-center justify-center h-full text-gray-500">
-              <Users className="w-16 h-16 mb-4 text-gray-300" />
+            <div className="flex flex-col items-center justify-center h-full text-muted-foreground">
+              <Users className="w-16 h-16 mb-4 text-muted-foreground/50" />
               <p className="text-lg font-medium">{t('volunteers.selectVolunteer')}</p>
               <p className="text-sm">{t('volunteers.selectVolunteerDescription')}</p>
             </div>
@@ -449,14 +449,14 @@ export function VolunteersPage() {
       {/* Assign Shift Modal */}
       {showAssignModal && selectedVolunteer && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-xl w-full max-w-lg max-h-[80vh] overflow-hidden">
-            <div className="flex items-center justify-between p-4 border-b border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900">
+          <div className="bg-card rounded-lg shadow-xl w-full max-w-lg max-h-[80vh] overflow-hidden">
+            <div className="flex items-center justify-between p-4 border-b border-border">
+              <h3 className="text-lg font-semibold text-foreground">
                 {t('volunteers.assignToShift')}
               </h3>
               <button
                 onClick={() => setShowAssignModal(false)}
-                className="p-1 text-gray-400 hover:text-gray-600"
+                className="p-1 text-muted-foreground/70 hover:text-muted-foreground"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -473,11 +473,11 @@ export function VolunteersPage() {
                           handleAssignShift(task.id);
                           setShowAssignModal(false);
                         }}
-                        className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 rounded-lg text-left transition-colors"
+                        className="w-full flex items-center justify-between p-3 bg-muted/50 hover:bg-muted rounded-lg text-left transition-colors"
                       >
                         <div>
-                          <h4 className="font-medium text-gray-900">{task.title}</h4>
-                          <div className="flex items-center gap-3 text-sm text-gray-500 mt-1">
+                          <h4 className="font-medium text-foreground">{task.title}</h4>
+                          <div className="flex items-center gap-3 text-sm text-muted-foreground mt-1">
                             {category && (
                               <span
                                 className="px-2 py-0.5 rounded text-xs font-medium"
@@ -492,14 +492,14 @@ export function VolunteersPage() {
                             <span>{formatDate(task.dueDate, 'MMM d, yyyy')}</span>
                           </div>
                         </div>
-                        <Plus className="w-5 h-5 text-gray-400" />
+                        <Plus className="w-5 h-5 text-muted-foreground/70" />
                       </button>
                     );
                   })}
                 </div>
               ) : (
-                <div className="text-center py-8 text-gray-500">
-                  <Calendar className="w-10 h-10 mx-auto mb-2 text-gray-300" />
+                <div className="text-center py-8 text-muted-foreground">
+                  <Calendar className="w-10 h-10 mx-auto mb-2 text-muted-foreground/50" />
                   <p>{t('volunteers.noAvailableTasks')}</p>
                 </div>
               )}

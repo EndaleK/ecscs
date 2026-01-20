@@ -65,9 +65,9 @@ export function KanbanPage() {
   }, []);
 
   return (
-    <div className="flex flex-col h-full p-6">
+    <div className="flex flex-col h-full">
       {/* Page Header */}
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex flex-col gap-4 border-b border-border bg-card/80 backdrop-blur-sm px-6 py-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold text-foreground">Kanban Board</h1>
           <p className="text-sm text-muted-foreground mt-1">
@@ -80,7 +80,7 @@ export function KanbanPage() {
       </div>
 
       {/* Filters */}
-      <div className="mb-6">
+      <div className="px-6 py-4 border-b border-border bg-card/50">
         <KanbanFilters
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
@@ -92,7 +92,7 @@ export function KanbanPage() {
       </div>
 
       {/* Kanban Board */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden p-6">
         <KanbanBoard
           tasks={filteredTasks}
           onTaskMove={handleTaskMove}
