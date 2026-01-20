@@ -1,0 +1,360 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@theme {
+  --font-sans: "DM Sans", "Noto Sans Ethiopic", system-ui, sans-serif;
+
+  /* ===== HERITAGE & CELEBRATION THEME ===== */
+  /* 30th Anniversary Color Palette */
+
+  /* Ethiopian Flag Colors - Vibrant */
+  --color-ethiopia-green: #2E7D32;    /* Vibrant Green - Growth/Youth */
+  --color-ethiopia-yellow: #FDD835;   /* Golden Yellow - Hope/Sun */
+  --color-ethiopia-red: #D32F2F;      /* Energetic Red - Bravery/Action */
+
+  /* Primary - Navy/Deep Blue (Professional FIFA-style) */
+  --color-primary: #1A2B48;
+  --color-primary-foreground: #ffffff;
+  --color-primary-light: #2D4A6F;
+  --color-primary-dark: #0F1A2E;
+
+  /* Secondary - Vibrant Green (Ethiopian Flag) */
+  --color-secondary: #2E7D32;
+  --color-secondary-foreground: #ffffff;
+  --color-secondary-light: #4CAF50;
+  --color-secondary-dark: #1B5E20;
+
+  /* Accent - Golden Yellow (Ethiopian Flag) */
+  --color-accent: #FDD835;
+  --color-accent-foreground: #1A2B48;
+  --color-accent-light: #FFEB3B;
+  --color-accent-dark: #F9A825;
+
+  /* Anniversary Gold - Special 30 Years accent */
+  --color-anniversary-gold: #C5A059;
+  --color-anniversary-gold-light: #D4B76A;
+  --color-anniversary-gold-dark: #A68A3C;
+
+  /* Energetic Red (Ethiopian Flag) */
+  --color-ethiopia-red-light: #EF5350;
+  --color-ethiopia-red-dark: #C62828;
+
+  /* Status Colors */
+  --color-success: #2E7D32;
+  --color-warning: #FDD835;
+  --color-danger: #D32F2F;
+
+  /* UI Colors - Clean & Professional */
+  --color-background: #FFFFFF;
+  --color-foreground: #1A2B48;
+  --color-muted: #F5F5F5;
+  --color-muted-foreground: #5C6B7A;
+  --color-border: #E0E4E8;
+  --color-input: #E0E4E8;
+  --color-ring: #1A2B48;
+
+  /* Card Colors */
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1A2B48;
+
+  /* Popover Colors */
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #1A2B48;
+
+  /* Destructive */
+  --color-destructive: #D32F2F;
+  --color-destructive-foreground: #ffffff;
+
+  /* Radius - Clean, modern */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Selection color - Navy blue */
+  ::selection {
+    background-color: rgba(26, 43, 72, 0.15);
+    color: #1A2B48;
+  }
+}
+
+/* ===== HERITAGE & CELEBRATION ACCENTS ===== */
+
+/* Ethiopian flag gradient accent line */
+.ethiopian-accent-line {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #2E7D32 15%,
+    #2E7D32 35%,
+    #FDD835 35%,
+    #FDD835 65%,
+    #D32F2F 65%,
+    #D32F2F 85%,
+    transparent 100%
+  );
+}
+
+/* Subtle tricolor gradient background */
+.ethiopian-gradient-subtle {
+  background: linear-gradient(
+    120deg,
+    rgba(46, 125, 50, 0.04) 0%,
+    rgba(253, 216, 53, 0.04) 50%,
+    rgba(211, 47, 47, 0.04) 100%
+  );
+}
+
+/* Clean white background with subtle warmth */
+.ethiopian-parchment {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+}
+
+/* Anniversary gold corner accent */
+.ethiopian-corner-accent {
+  position: relative;
+}
+
+.ethiopian-corner-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #C5A059, transparent);
+  opacity: 0.7;
+}
+
+.ethiopian-corner-accent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 40px;
+  background: linear-gradient(180deg, #C5A059, transparent);
+  opacity: 0.7;
+}
+
+/* 30 Years Anniversary Badge Style */
+.anniversary-badge {
+  background: linear-gradient(135deg, #C5A059 0%, #D4B76A 50%, #C5A059 100%);
+  color: #1A2B48;
+  border: 2px solid #A68A3C;
+  box-shadow: 0 2px 8px rgba(197, 160, 89, 0.3);
+}
+
+/* ===== COMPONENT STYLES ===== */
+
+/* Clean card styling */
+.card-elevated {
+  background: #FFFFFF;
+  border: 1px solid #E0E4E8;
+  box-shadow: 0 1px 3px rgba(26, 43, 72, 0.06), 0 1px 2px rgba(26, 43, 72, 0.04);
+}
+
+/* Button styles - Navy primary */
+.btn-primary {
+  background: #1A2B48;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #0F1A2E;
+}
+
+/* Green button variant */
+.btn-success {
+  background: #2E7D32;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+  background: #1B5E20;
+}
+
+/* Input focus states */
+.input-field:focus {
+  border-color: #1A2B48;
+  box-shadow: 0 0 0 3px rgba(26, 43, 72, 0.1);
+}
+
+/* Badge styles */
+.badge-success {
+  background: rgba(46, 125, 50, 0.1);
+  color: #1B5E20;
+}
+
+.badge-warning {
+  background: rgba(253, 216, 53, 0.2);
+  color: #F57F17;
+}
+
+.badge-danger {
+  background: rgba(211, 47, 47, 0.1);
+  color: #C62828;
+}
+
+.badge-anniversary {
+  background: rgba(197, 160, 89, 0.15);
+  color: #8B7335;
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+/* Amharic font support */
+@font-face {
+  font-family: 'Noto Sans Ethiopic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/notosansethiopic/v47/7cHPv50vjIepfJVOZZgcpQ5B9FBTH74EIOG5_.woff2') format('woff2');
+  unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF, U+AB00-AB2F;
+}
+
+@font-face {
+  font-family: 'Noto Sans Ethiopic';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/notosansethiopic/v47/7cHPv50vjIepfJVOZZgcpQ5B9FBTH74EIOG5_.woff2') format('woff2');
+  unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF, U+AB00-AB2F;
+}
+
+@font-face {
+  font-family: 'Noto Sans Ethiopic';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/notosansethiopic/v47/7cHPv50vjIepfJVOZZgcpQ5B9FBTH74EIOG5_.woff2') format('woff2');
+  unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF, U+AB00-AB2F;
+}
+
+@font-face {
+  font-family: 'Noto Sans Ethiopic';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/notosansethiopic/v47/7cHPv50vjIepfJVOZZgcpQ5B9FBTH74EIOG5_.woff2') format('woff2');
+  unicode-range: U+1200-137F, U+1380-139F, U+2D80-2DDF, U+AB00-AB2F;
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F3F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* ===== SCHEDULE-X CALENDAR OVERRIDES ===== */
+
+.sx-react-calendar-wrapper {
+  height: 100%;
+  min-height: 500px;
+}
+
+.sx-react-calendar-wrapper .sx__calendar-wrapper {
+  border-radius: 0.75rem;
+  border: 1px solid #E8E5E1;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.sx-react-calendar-wrapper .sx__calendar-header {
+  background: #FDFCFA;
+  border-bottom: 1px solid #E8E5E1;
+}
+
+.sx-react-calendar-wrapper .sx__day--today {
+  background: rgba(45, 106, 79, 0.08) !important;
+}
+
+.sx-react-calendar-wrapper .sx__day--selected {
+  background: #2D6A4F !important;
+  color: white !important;
+}
+
+.sx-react-calendar-wrapper .sx__event {
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+}
+
+.sx-react-calendar-wrapper .sx__time-grid-line {
+  border-color: #E8E5E1;
+}
+
+.sx-react-calendar-wrapper .sx__week-header {
+  background: #F5F3F0;
+}
+
+.sx-react-calendar-wrapper .sx__month-grid-day-header {
+  background: #F5F3F0;
+  color: #6B7280;
+}
+
+.sx-react-calendar-wrapper .sx__chevron-wrapper {
+  color: #2D6A4F;
+}
+
+.sx-react-calendar-wrapper .sx__chevron-wrapper:hover {
+  background: rgba(45, 106, 79, 0.08);
+}
+
+/* ===== LEGACY COLOR MAPPINGS ===== */
+/* These map old bright colors to new refined colors for existing components */
+
+/* Green mappings */
+.bg-\[\#078930\] { background-color: #2D6A4F !important; }
+.text-\[\#078930\] { color: #2D6A4F !important; }
+.border-\[\#078930\] { border-color: #2D6A4F !important; }
+.hover\:bg-\[\#067028\]:hover { background-color: #1B4332 !important; }
+.hover\:text-\[\#067028\]:hover { color: #1B4332 !important; }
+
+/* Yellow mappings - to warm gold */
+.bg-\[\#FCDD09\] { background-color: #D4A03C !important; }
+.text-\[\#FCDD09\] { color: #D4A03C !important; }
+.border-\[\#FCDD09\] { border-color: #D4A03C !important; }
+
+/* Red mappings - to terracotta */
+.bg-\[\#DA121A\] { background-color: #B5564F !important; }
+.text-\[\#DA121A\] { color: #B5564F !important; }
+.border-\[\#DA121A\] { border-color: #B5564F !important; }
+
+/* Background adjustments */
+.bg-\[\#FFFEF7\] { background-color: #FDFCFA !important; }
+.bg-\[\#F5F0E8\] { background-color: #F5F3F0 !important; }
+.bg-\[\#FFFDF5\] { background-color: #FFFFFF !important; }
+
+/* Border adjustments */
+.border-\[\#E7DFD3\] { border-color: #E8E5E1 !important; }
+
+/* Text adjustments */
+.text-\[\#78716C\] { color: #6B7280 !important; }
+.text-\[\#44403C\] { color: #4B5563 !important; }

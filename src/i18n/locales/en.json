@@ -1,0 +1,499 @@
+{
+  "header": {
+    "title": "ECSCS",
+    "subtitle": "30 Years Anniversary - Soccer Tournament",
+    "notifications": "Notifications"
+  },
+  "landing": {
+    "nav": {
+      "organizerLogin": "Organizer Login"
+    },
+    "hero": {
+      "badge": "30th Anniversary Celebration",
+      "title": "ECSCS Soccer Tournament 2026",
+      "subtitle": "Join us in celebrating 30 years of Ethiopian community sports, culture, and unity in Edmonton. A weekend of soccer, music, food, and family fun!",
+      "date": "July 2026",
+      "location": "Edmonton, AB",
+      "volunteerCta": "Become a Volunteer",
+      "learnMore": "Learn More"
+    },
+    "about": {
+      "title": "About the Tournament",
+      "description": "The ECSCS Soccer Tournament brings together the Ethiopian community and friends for an exciting celebration of sport and culture.",
+      "historyTitle": "30 Years of Community",
+      "historySubtitle": "Building connections since 1996",
+      "historyText": "For three decades, the Ethiopian Community Sports and Cultural Society has been fostering unity, promoting Ethiopian heritage, and building lasting friendships through the beautiful game of soccer. What started as a small community gathering has grown into one of Edmonton's most anticipated cultural sporting events."
+    },
+    "highlights": {
+      "title": "Event Highlights",
+      "subtitle": "Something for everyone at our anniversary celebration",
+      "soccer": {
+        "title": "Soccer Tournament",
+        "description": "Competitive matches featuring teams from across the community in various age categories."
+      },
+      "music": {
+        "title": "Live Music & Concert",
+        "description": "Enjoy performances featuring traditional Ethiopian music and contemporary artists."
+      },
+      "kids": {
+        "title": "Kids Activities",
+        "description": "Fun games, face painting, and activities designed especially for our youngest community members."
+      },
+      "food": {
+        "title": "Food & Culture",
+        "description": "Savor authentic Ethiopian cuisine and experience our rich cultural heritage."
+      }
+    },
+    "info": {
+      "title": "Event Information",
+      "when": {
+        "title": "When",
+        "details": "July 2026 - Full weekend of events and festivities"
+      },
+      "where": {
+        "title": "Where",
+        "details": "Edmonton, Alberta - Venue details coming soon"
+      },
+      "what": {
+        "title": "What to Expect",
+        "details": "Soccer matches, cultural performances, delicious food, and community fellowship"
+      }
+    },
+    "volunteer": {
+      "title": "Make a Difference",
+      "description": "Volunteers are the heart of our tournament. Join our team and help create an unforgettable experience for our community. Every contribution counts!",
+      "cta": "Sign Up to Volunteer"
+    },
+    "footer": {
+      "description": "Ethiopian Community Sports and Cultural Society - Celebrating 30 years of community, culture, and sport.",
+      "quickLinks": "Quick Links",
+      "contact": "Contact",
+      "email": "info@ecscs.org",
+      "copyright": "© 2026 ECSCS. All rights reserved."
+    }
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "tasks": "Tasks",
+    "kanban": "Kanban",
+    "calendar": "Calendar",
+    "budget": "Budget",
+    "contacts": "Contacts",
+    "volunteers": "Volunteers",
+    "settings": "Settings"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "optional": "Optional",
+    "close": "Close"
+  },
+  "dashboard": {
+    "totalTasks": "Total Tasks",
+    "completedTasks": "Completed",
+    "inProgress": "In Progress",
+    "overdue": "Overdue",
+    "upcomingEvents": "Upcoming Events",
+    "volunteers": "Volunteers",
+    "categories": "Categories",
+    "complete": "complete",
+    "progressByCategory": "Progress by Category",
+    "noCategories": "No categories yet",
+    "upcomingTasks": "Upcoming Tasks",
+    "noUpcomingTasks": "All caught up! No upcoming tasks.",
+    "markComplete": "Mark as complete",
+    "recentActivity": "Recent Activity",
+    "noRecentActivity": "No recent activity",
+    "overallProgress": "Overall Progress",
+    "tasksComplete": "Tasks",
+    "daysUntilEvent": "days until the tournament",
+    "countdownMessage": "Keep up the great work preparing for the event!",
+    "eventToday": "Tournament Day!",
+    "eventTodayMessage": "The big day is here! Good luck with the tournament!",
+    "welcomeMessage": "Here's your tournament preparation overview.",
+    "greeting": {
+      "morning": "Good morning!",
+      "afternoon": "Good afternoon!",
+      "evening": "Good evening!"
+    },
+    "activity": {
+      "taskCompleted": "Task completed",
+      "taskCreated": "New task added",
+      "taskUpdated": "Task updated",
+      "volunteerAdded": "Volunteer registered"
+    }
+  },
+  "priorities": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "urgent": "Urgent"
+  },
+  "reminders": {
+    "title": "Reminders",
+    "upcoming": "Upcoming Reminders",
+    "sent": "Sent Reminders",
+    "sentLabel": "Sent",
+    "noReminders": "No reminders set. Create a reminder to stay on track with your tasks.",
+    "unknownTask": "Unknown Task",
+    "dismiss": "Dismiss",
+    "createReminder": "Create Reminder",
+    "editReminder": "Edit Reminder",
+    "selectTask": "Select Task",
+    "selectTaskPlaceholder": "Choose a task...",
+    "reminderDateTime": "Reminder Date & Time",
+    "reminderType": "Reminder Type",
+    "typeBrowser": "Browser Notification",
+    "typeEmail": "Email Notification",
+    "errors": {
+      "selectTask": "Please select a task for the reminder.",
+      "selectDate": "Please select a date and time for the reminder.",
+      "futureDate": "Reminder date must be in the future.",
+      "notificationPermission": "Browser notification permission is required. Please enable notifications."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "noNotifications": "No notifications",
+    "enablePrompt": "Enable browser notifications to receive reminders.",
+    "enable": "Enable Notifications",
+    "reminderDue": "Reminder due",
+    "clickToView": "Click a notification to view the task"
+  },
+  "calendar": {
+    "pageTitle": "Calendar",
+    "pageSubtitle": "Manage your events and schedule",
+    "addEvent": "Add Event",
+    "eventsOn": "Events on",
+    "noEventsForDate": "No events for this date",
+    "confirmDelete": "Are you sure you want to delete this event?",
+    "views": {
+      "day": "Day",
+      "week": "Week",
+      "month": "Month"
+    },
+    "form": {
+      "createTitle": "Create Event",
+      "editTitle": "Edit Event",
+      "title": "Title",
+      "titlePlaceholder": "Enter event title",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter event description",
+      "startDateTime": "Start Date/Time",
+      "endDateTime": "End Date/Time",
+      "location": "Location",
+      "locationPlaceholder": "Enter event location",
+      "linkedTask": "Link to Task",
+      "noTaskLinked": "No task linked",
+      "category": "Category",
+      "noCategory": "No category",
+      "errors": {
+        "titleRequired": "Title is required",
+        "startDateRequired": "Start date is required",
+        "endDateRequired": "End date is required",
+        "endDateAfterStart": "End date must be after start date"
+      }
+    },
+    "eventCard": {
+      "to": "to",
+      "description": "Description",
+      "linkedTask": "Linked Task"
+    },
+    "mini": {
+      "today": "Today",
+      "previousMonth": "Previous month",
+      "nextMonth": "Next month",
+      "days": {
+        "sun": "Su",
+        "mon": "Mo",
+        "tue": "Tu",
+        "wed": "We",
+        "thu": "Th",
+        "fri": "Fr",
+        "sat": "Sa"
+      }
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "tasks": {
+    "status": {
+      "todo": "To Do",
+      "in_progress": "In Progress",
+      "inProgress": "In Progress",
+      "done": "Done"
+    }
+  },
+  "contacts": {
+    "description": "Manage volunteers, vendors, sponsors, and other contacts",
+    "addContact": "Add Contact",
+    "editContact": "Edit Contact",
+    "contactDetails": "Contact Details",
+    "confirmDelete": "Are you sure you want to delete this contact?",
+    "noContacts": "No contacts yet",
+    "noMatchingContacts": "No contacts match your search criteria",
+    "addFirstContact": "Add your first contact to get started",
+    "searchPlaceholder": "Search by name or email...",
+    "rental": "Rental",
+    "assignedCategories": "Assigned Categories",
+    "assignedTasks": "Assigned Tasks",
+    "filters": {
+      "all": "All"
+    },
+    "roles": {
+      "volunteer": "Volunteer",
+      "vendor": "Vendor",
+      "sponsor": "Sponsor",
+      "committee": "Committee",
+      "external": "External"
+    },
+    "actions": {
+      "email": "Email",
+      "call": "Call"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter contact name",
+      "email": "Email",
+      "emailPlaceholder": "Enter email address",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter phone number",
+      "role": "Role",
+      "categories": "Categories",
+      "notes": "Notes",
+      "notesPlaceholder": "Add any additional notes...",
+      "isRentalContact": "This contact provides rental items/services",
+      "create": "Create Contact",
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address"
+      }
+    },
+    "rentalItems": {
+      "title": "Rental Items",
+      "add": "Add Item",
+      "itemName": "Item name",
+      "price": "Price",
+      "quantity": "Qty",
+      "total": "Total",
+      "noItems": "No rental items added"
+    }
+  },
+  "navigation": {
+    "settings": "Settings"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Manage your application preferences and account settings.",
+    "generalSettings": "General Settings",
+    "notificationPreferences": "Notification Preferences",
+    "language": {
+      "title": "Language",
+      "description": "Select your preferred language for the application."
+    },
+    "theme": {
+      "title": "Theme",
+      "description": "Choose your preferred color scheme.",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Manage how you receive notifications.",
+      "preferencesDescription": "Configure your notification preferences and reminder settings.",
+      "browserNotifications": "Browser Notifications",
+      "permissionDenied": "Notification permission was denied. Please enable in browser settings.",
+      "permissionInfo": "Receive browser notifications for task reminders and updates.",
+      "enable": "Enable Notifications",
+      "enableDescription": "Allow the app to send you browser notifications.",
+      "defaultReminderTime": "Default Reminder Time",
+      "defaultReminderDescription": "Set the default time before events to receive reminders.",
+      "reminder1Hour": "1 hour before",
+      "reminder1Day": "1 day before",
+      "reminder1Week": "1 week before",
+      "sound": "Notification Sound",
+      "soundDescription": "Play a sound when notifications are received."
+    },
+    "about": {
+      "title": "About",
+      "ecscsTitle": "ECSCS",
+      "subtitle": "Ethiopian Community Sports and Cultural Society",
+      "aboutTitle": "About ECSCS",
+      "aboutDescription": "The Ethiopian Community Sports and Cultural Society (ECSCS) is a community organization dedicated to promoting Ethiopian culture, sports, and community engagement.",
+      "tournamentInfo": "30 Years Anniversary Tournament",
+      "tournamentDescription": "Celebrating 30 years of community sports and cultural events with our annual soccer tournament. This special anniversary edition brings together teams from across the community.",
+      "version": "Version",
+      "copyright": "2024 ECSCS. All rights reserved."
+    },
+    "dataManagement": {
+      "title": "Data Management",
+      "description": "Export or import your data for backup and transfer.",
+      "export": "Export Data",
+      "import": "Import Data",
+      "exportComingSoon": "Data export feature coming soon!",
+      "importComingSoon": "Data import feature coming soon!",
+      "note": "Export your tasks, contacts, and settings to a JSON file, or import data from a previous backup."
+    }
+  },
+  "sharing": {
+    "shareEvent": "Share Event",
+    "shareEventDescription": "Share this event with friends and add it to your calendar.",
+    "shareOn": "Share on Social Media",
+    "shareOnFacebook": "Share on Facebook",
+    "shareOnTwitter": "Share on Twitter",
+    "shareOnWhatsApp": "Share on WhatsApp",
+    "shareOnLinkedIn": "Share on LinkedIn",
+    "addToCalendar": "Add to Calendar",
+    "addToYourCalendar": "Add to Your Calendar",
+    "copyLink": "Copy Event Link",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "defaultMessage": "Join us at {{title}} on {{date}} at {{location}}! #ECSCS30Years",
+    "locationTBA": "Location TBA"
+  },
+  "volunteers": {
+    "title": "Volunteers",
+    "pageTitle": "Volunteer Management",
+    "pageDescription": "Manage volunteers and assign them to shifts",
+    "count": "volunteer(s)",
+    "addVolunteer": "Add Volunteer",
+    "editVolunteer": "Edit Volunteer",
+    "searchPlaceholder": "Search by name, email, or phone...",
+    "filterBySkills": "Filter by Skills",
+    "filterByAvailability": "Filter by Availability",
+    "filterByDate": "Filter by Date",
+    "filterByCategory": "Filter by Category",
+    "clearFilters": "Clear Filters",
+    "filter": "Filter",
+    "noVolunteers": "No Volunteers",
+    "noMatchingVolunteers": "No volunteers match your filters",
+    "noVolunteersYet": "No volunteers have registered yet",
+    "selectVolunteer": "Select a Volunteer",
+    "selectVolunteerDescription": "Choose a volunteer from the list to view details",
+    "availability": {
+      "all": "All",
+      "available": "Has Availability",
+      "assigned": "Has Assignments"
+    },
+    "availableDays": "day(s) available",
+    "assignedShifts": "shift(s)",
+    "personalInfo": "Personal Information",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "skills": "Skills",
+    "skillsDescription": "Select the skills you can contribute",
+    "date": "Date",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "addDate": "Add Date",
+    "register": "Register as Volunteer",
+    "registering": "Registering...",
+    "registrationSuccess": "Registration Successful!",
+    "registrationSuccessMessage": "Thank you for registering as a volunteer. You can now sign up for available shifts.",
+    "registeredAs": "Registered as: {{email}}",
+    "registerAnother": "Register Another Volunteer",
+    "registrationError": "An error occurred during registration. Please try again.",
+    "availabilityDescription": "Add dates and times when you're available to volunteer",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "emailExists": "This email is already registered",
+      "phoneRequired": "Phone number is required"
+    },
+    "availableShifts": "Available Shifts",
+    "availableShiftsDescription": "{{count}} shift(s) need volunteers",
+    "allDates": "All Dates",
+    "allCategories": "All Categories",
+    "noShiftsAvailable": "No Shifts Available",
+    "noMatchingShifts": "No shifts match your filters",
+    "checkBackLater": "Check back later for new opportunities",
+    "volunteersSignedUp": "signed up",
+    "signUp": "Sign Up",
+    "signedUp": "Signed Up",
+    "notRegisteredWarning": "You must register before signing up for shifts. Please complete registration first.",
+    "myShifts": "My Shifts",
+    "myShiftsDescription": "You have {{count}} shift(s) assigned",
+    "upcomingShifts": "Upcoming Shifts",
+    "pastShifts": "Past Shifts",
+    "shiftSoon": "Coming up soon!",
+    "cancelSignup": "Cancel",
+    "confirmCancelShift": "Are you sure you want to cancel this shift signup?",
+    "noShiftsAssigned": "No Shifts Assigned",
+    "noShiftsAssignedDescription": "Browse available shifts and sign up to help out.",
+    "notFound": "Volunteer Not Found",
+    "notFoundDescription": "We couldn't find a volunteer with this email. Please register first or check your email address.",
+    "assignToShift": "Assign to Shift",
+    "noAvailableTasks": "No tasks available for assignment",
+    "registeredOn": "Registered on {{date}}",
+    "confirmDelete": "Are you sure you want to delete {{name}}? This action cannot be undone.",
+    "tabs": {
+      "register": "Register",
+      "availableShifts": "Available Shifts",
+      "myShifts": "My Shifts"
+    },
+    "publicPage": {
+      "title": "Become a Volunteer",
+      "subtitle": "Join us in making the ECSCS 30th Anniversary Soccer Tournament a success! Your time and skills can make a real difference.",
+      "alreadyRegistered": "Already registered? Look up your email",
+      "enterEmail": "Enter your registered email address",
+      "lookup": "Look Up",
+      "emailNotFound": "Email not found. Please register first.",
+      "changeEmail": "Change",
+      "registerTitle": "Volunteer Registration",
+      "registerDescription": "Fill out the form below to register as a volunteer. All fields marked with * are required.",
+      "shiftsTitle": "Available Volunteer Shifts",
+      "shiftsDescription": "Browse and sign up for shifts that match your schedule and skills.",
+      "registerFirst": "Register to Sign Up for Shifts",
+      "registerFirstDescription": "You need to register before you can sign up for volunteer shifts.",
+      "goToRegistration": "Go to Registration",
+      "myShiftsTitle": "Your Volunteer Shifts",
+      "myShiftsDescription": "View and manage the shifts you've signed up for.",
+      "verifyEmail": "Enter Your Email",
+      "verifyEmailDescription": "To view your shifts, please enter the email address you used to register.",
+      "footer": "Thank you for your interest in volunteering with ECSCS!"
+    }
+  },
+  "budget": {
+    "title": "Budget & Finance",
+    "description": "Track income, expenses, and sponsorships",
+    "overview": "Overview",
+    "totalBudget": "Total Budget",
+    "totalIncome": "Total Income",
+    "totalExpenses": "Total Expenses",
+    "balance": "Balance",
+    "categoryBudgets": "Category Budgets",
+    "transactions": "Transactions",
+    "sponsors": "Sponsors",
+    "addTransaction": "Add Transaction",
+    "addCategory": "Add",
+    "categoryName": "Category name",
+    "amount": "Amount",
+    "overBudget": "Over budget",
+    "remaining": "remaining"
+  }
+}

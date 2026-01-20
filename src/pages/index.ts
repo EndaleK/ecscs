@@ -1,0 +1,10 @@
+export { LandingPage } from './landing-page';
+export { DashboardPage } from './DashboardPage';
+export { TasksPage } from './tasks-page';
+export { KanbanPage } from './KanbanPage';
+export { CalendarPage } from './CalendarPage';
+export { ContactsPage } from './contacts-page';
+export { VolunteersPage } from './volunteers-page';
+export { VolunteerSignupPage } from './volunteer-signup-page';
+export { SettingsPage } from './SettingsPage';
+export { BudgetPage } from './budget-page';

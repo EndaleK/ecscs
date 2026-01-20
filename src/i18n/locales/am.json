@@ -1,0 +1,499 @@
+{
+  "header": {
+    "title": "ኢ.ሲ.ኤስ.ሲ.ኤስ",
+    "subtitle": "30 ዓመት ክብረ በዓል - የእግር ኳስ ውድድር",
+    "notifications": "ማሳወቂያዎች"
+  },
+  "landing": {
+    "nav": {
+      "organizerLogin": "የአዘጋጅ መግቢያ"
+    },
+    "hero": {
+      "badge": "30ኛ ዓመት ክብረ በዓል",
+      "title": "የኢ.ሲ.ኤስ.ሲ.ኤስ የእግር ኳስ ውድድር 2026",
+      "subtitle": "በኤድመንተን 30 ዓመታት የኢትዮጵያ ማህበረሰብ ስፖርት፣ ባህል እና አንድነትን በማክበር ይቀላቀሉን። የእግር ኳስ፣ ሙዚቃ፣ ምግብ እና የቤተሰብ ዝግጅት ሳምንት!",
+      "date": "ሐምሌ 2026",
+      "location": "ኤድመንተን፣ አልበርታ",
+      "volunteerCta": "በጎ ፈቃደኛ ይሁኑ",
+      "learnMore": "ተጨማሪ ይወቁ"
+    },
+    "about": {
+      "title": "ስለ ውድድሩ",
+      "description": "የኢ.ሲ.ኤስ.ሲ.ኤስ የእግር ኳስ ውድድር የኢትዮጵያ ማህበረሰብን እና ጓደኞችን አንድ ያደርጋል ለአስደሳች የስፖርት እና ባህል ክብረ በዓል።",
+      "historyTitle": "30 ዓመታት የማህበረሰብ",
+      "historySubtitle": "ከ1996 ጀምሮ ግንኙነቶችን በመገንባት ላይ",
+      "historyText": "ለሦስት አስርት ዓመታት የኢትዮጵያ ማህበረሰብ ስፖርት እና ባህላዊ ማህበር በቆንጆው የእግር ኳስ ጨዋታ አማካኝነት አንድነትን በማጎልበት፣ የኢትዮጵያን ቅርስ በማስተዋወቅ እና ዘላቂ ወዳጅነቶችን በመገንባት ላይ ይገኛል። ትንሽ የማህበረሰብ ስብሰባ ሆኖ የጀመረው በኤድመንተን በጣም ከሚጠበቁ ባህላዊ የስፖርት ዝግጅቶች አንዱ ሆኗል።"
+    },
+    "highlights": {
+      "title": "የዝግጅት ድምቀቶች",
+      "subtitle": "በክብረ በዓላችን ለሁሉም የሚሆን ነገር አለ",
+      "soccer": {
+        "title": "የእግር ኳስ ውድድር",
+        "description": "በተለያዩ የዕድሜ ምድቦች ከመላው ማህበረሰብ የመጡ ቡድኖች የሚሳተፉባቸው ውድድሮች።"
+      },
+      "music": {
+        "title": "የቀጥታ ሙዚቃ እና ኮንሰርት",
+        "description": "ባህላዊ የኢትዮጵያ ሙዚቃ እና ዘመናዊ አርቲስቶች ያቀርቡ ይደሰቱ።"
+      },
+      "kids": {
+        "title": "የልጆች እንቅስቃሴዎች",
+        "description": "ጨዋታዎች፣ የፊት ሥዕል እና በተለይ ለታዳጊ የማህበረሰብ አባላት የተዘጋጁ እንቅስቃሴዎች።"
+      },
+      "food": {
+        "title": "ምግብ እና ባህል",
+        "description": "ትክክለኛ የኢትዮጵያ ምግብ ይቅመሱ እና ሀብታም ባህላዊ ቅርሳችንን ይለማመዱ።"
+      }
+    },
+    "info": {
+      "title": "የዝግጅት መረጃ",
+      "when": {
+        "title": "መቼ",
+        "details": "ሐምሌ 2026 - ሙሉ ሳምንት ዝግጅቶች እና በዓላት"
+      },
+      "where": {
+        "title": "የት",
+        "details": "ኤድመንተን፣ አልበርታ - የቦታ ዝርዝሮች በቅርቡ ይገለጻሉ"
+      },
+      "what": {
+        "title": "ምን ይጠብቁ",
+        "details": "የእግር ኳስ ጨዋታዎች፣ ባህላዊ ትርኢቶች፣ ጣፋጭ ምግብ እና የማህበረሰብ ወዳጅነት"
+      }
+    },
+    "volunteer": {
+      "title": "ለውጥ ያድርጉ",
+      "description": "በጎ ፈቃደኞች የውድድራችን ልብ ናቸው። ቡድናችንን ይቀላቀሉ እና ለማህበረሰባችን የማይረሳ ተሞክሮ እንዲፈጠር ይርዱ። እያንዳንዱ አስተዋጽኦ ይቆጠራል!",
+      "cta": "በጎ ፈቃደኛ ለመሆን ይመዝገቡ"
+    },
+    "footer": {
+      "description": "የኢትዮጵያ ማህበረሰብ ስፖርት እና ባህላዊ ማህበር - 30 ዓመታት ማህበረሰብ፣ ባህል እና ስፖርትን እያከበረ።",
+      "quickLinks": "ፈጣን አገናኞች",
+      "contact": "አድራሻ",
+      "email": "info@ecscs.org",
+      "copyright": "© 2026 ኢ.ሲ.ኤስ.ሲ.ኤስ። መብቱ በሕግ የተጠበቀ ነው።"
+    }
+  },
+  "sidebar": {
+    "dashboard": "ዳሽቦርድ",
+    "tasks": "ተግባራት",
+    "kanban": "ካንባን",
+    "calendar": "ቀን መቁጠሪያ",
+    "budget": "በጀት",
+    "contacts": "እውቂያዎች",
+    "volunteers": "በጎ ፈቃደኞች",
+    "settings": "ቅንብሮች"
+  },
+  "common": {
+    "loading": "በመጫን ላይ...",
+    "error": "ስህተት",
+    "save": "አስቀምጥ",
+    "cancel": "ሰርዝ",
+    "delete": "ሰርዝ",
+    "edit": "አርም",
+    "add": "ጨምር",
+    "search": "ፈልግ",
+    "optional": "አማራጭ",
+    "close": "ዝጋ"
+  },
+  "dashboard": {
+    "totalTasks": "ጠቅላላ ተግባራት",
+    "completedTasks": "የተጠናቀቁ",
+    "inProgress": "በሂደት ላይ",
+    "overdue": "የጊዜ ገደብ ያለፈ",
+    "upcomingEvents": "መጪ ዝግጅቶች",
+    "volunteers": "በጎ ፈቃደኞች",
+    "categories": "ምድቦች",
+    "complete": "ተጠናቋል",
+    "progressByCategory": "በምድብ እድገት",
+    "noCategories": "እስካሁን ምድቦች የሉም",
+    "upcomingTasks": "መጪ ተግባራት",
+    "noUpcomingTasks": "ሁሉም ተጠናቋል! መጪ ተግባራት የሉም።",
+    "markComplete": "እንደተጠናቀቀ ምልክት አድርግ",
+    "recentActivity": "የቅርብ ጊዜ እንቅስቃሴ",
+    "noRecentActivity": "የቅርብ ጊዜ እንቅስቃሴ የለም",
+    "overallProgress": "አጠቃላይ እድገት",
+    "tasksComplete": "ተግባራት",
+    "daysUntilEvent": "ቀናት ለውድድሩ ቀርተዋል",
+    "countdownMessage": "ለዝግጅቱ በዝግጅት ላይ ጥሩ ስራ ቀጥሉ!",
+    "eventToday": "የውድድር ቀን!",
+    "eventTodayMessage": "ታላቁ ቀን ደርሷል! ለውድድሩ መልካም እድል!",
+    "welcomeMessage": "የውድድር ዝግጅት ማጠቃለያዎ እነሆ።",
+    "greeting": {
+      "morning": "እንደምን አደሩ!",
+      "afternoon": "እንደምን ዋሉ!",
+      "evening": "እንደምን አመሹ!"
+    },
+    "activity": {
+      "taskCompleted": "ተግባር ተጠናቋል",
+      "taskCreated": "አዲስ ተግባር ታክሏል",
+      "taskUpdated": "ተግባር ተዘምኗል",
+      "volunteerAdded": "በጎ ፈቃደኛ ተመዝግቧል"
+    }
+  },
+  "priorities": {
+    "low": "ዝቅተኛ",
+    "medium": "መካከለኛ",
+    "high": "ከፍተኛ",
+    "urgent": "አስቸኳይ"
+  },
+  "reminders": {
+    "title": "አስታዋሾች",
+    "upcoming": "መጪ አስታዋሾች",
+    "sent": "የተላኩ አስታዋሾች",
+    "sentLabel": "ተልኳል",
+    "noReminders": "አስታዋሾች አልተዘጋጁም። ከተግባራትዎ ጋር ለመቆየት አስታዋሽ ይፍጠሩ።",
+    "unknownTask": "ያልታወቀ ተግባር",
+    "dismiss": "አሰናብት",
+    "createReminder": "አስታዋሽ ፍጠር",
+    "editReminder": "አስታዋሽ አርም",
+    "selectTask": "ተግባር ይምረጡ",
+    "selectTaskPlaceholder": "ተግባር ይምረጡ...",
+    "reminderDateTime": "የአስታዋሽ ቀን እና ሰዓት",
+    "reminderType": "የአስታዋሽ አይነት",
+    "typeBrowser": "የአሳሽ ማሳወቂያ",
+    "typeEmail": "የኢሜይል ማሳወቂያ",
+    "errors": {
+      "selectTask": "እባክዎ ለአስታዋሹ ተግባር ይምረጡ።",
+      "selectDate": "እባክዎ ለአስታዋሹ ቀን እና ሰዓት ይምረጡ።",
+      "futureDate": "የአስታዋሽ ቀን ወደፊት መሆን አለበት።",
+      "notificationPermission": "የአሳሽ ማሳወቂያ ፈቃድ ያስፈልጋል። እባክዎ ማሳወቂያዎችን ያንቁ።"
+    }
+  },
+  "notifications": {
+    "title": "ማሳወቂያዎች",
+    "markAllRead": "ሁሉንም እንደተነበበ ምልክት አድርግ",
+    "noNotifications": "ማሳወቂያዎች የሉም",
+    "enablePrompt": "አስታዋሾችን ለመቀበል የአሳሽ ማሳወቂያዎችን ያንቁ።",
+    "enable": "ማሳወቂያዎችን አንቃ",
+    "reminderDue": "አስታዋሽ ጊዜው ደርሷል",
+    "clickToView": "ተግባሩን ለማየት ማሳወቂያ ላይ ጠቅ ያድርጉ"
+  },
+  "calendar": {
+    "pageTitle": "ቀን መቁጠሪያ",
+    "pageSubtitle": "ዝግጅቶችዎን እና የጊዜ ሰሌዳዎን ያስተዳድሩ",
+    "addEvent": "ዝግጅት ጨምር",
+    "eventsOn": "ዝግጅቶች በ",
+    "noEventsForDate": "ለዚህ ቀን ዝግጅቶች የሉም",
+    "confirmDelete": "እርግጠኛ ነዎት ይህን ዝግጅት መሰረዝ ይፈልጋሉ?",
+    "views": {
+      "day": "ቀን",
+      "week": "ሳምንት",
+      "month": "ወር"
+    },
+    "form": {
+      "createTitle": "ዝግጅት ፍጠር",
+      "editTitle": "ዝግጅት አርም",
+      "title": "ርዕስ",
+      "titlePlaceholder": "የዝግጅት ርዕስ ያስገቡ",
+      "description": "መግለጫ",
+      "descriptionPlaceholder": "የዝግጅት መግለጫ ያስገቡ",
+      "startDateTime": "የመጀመሪያ ቀን/ሰዓት",
+      "endDateTime": "የመጨረሻ ቀን/ሰዓት",
+      "location": "ቦታ",
+      "locationPlaceholder": "የዝግጅት ቦታ ያስገቡ",
+      "linkedTask": "ከተግባር ጋር አገናኝ",
+      "noTaskLinked": "ተግባር አልተገናኘም",
+      "category": "ምድብ",
+      "noCategory": "ምድብ የለም",
+      "errors": {
+        "titleRequired": "ርዕስ ያስፈልጋል",
+        "startDateRequired": "የመጀመሪያ ቀን ያስፈልጋል",
+        "endDateRequired": "የመጨረሻ ቀን ያስፈልጋል",
+        "endDateAfterStart": "የመጨረሻ ቀን ከመጀመሪያ ቀን በኋላ መሆን አለበት"
+      }
+    },
+    "eventCard": {
+      "to": "እስከ",
+      "description": "መግለጫ",
+      "linkedTask": "የተገናኘ ተግባር"
+    },
+    "mini": {
+      "today": "ዛሬ",
+      "previousMonth": "ያለፈው ወር",
+      "nextMonth": "ቀጣይ ወር",
+      "days": {
+        "sun": "እሑ",
+        "mon": "ሰኞ",
+        "tue": "ማክ",
+        "wed": "ረቡ",
+        "thu": "ሐሙ",
+        "fri": "ዓር",
+        "sat": "ቅዳ"
+      }
+    },
+    "months": {
+      "january": "ጥር",
+      "february": "የካቲት",
+      "march": "መጋቢት",
+      "april": "ሚያዝያ",
+      "may": "ግንቦት",
+      "june": "ሰኔ",
+      "july": "ሐምሌ",
+      "august": "ነሐሴ",
+      "september": "መስከረም",
+      "october": "ጥቅምት",
+      "november": "ኅዳር",
+      "december": "ታኅሣሥ"
+    }
+  },
+  "tasks": {
+    "status": {
+      "todo": "የሚደረግ",
+      "in_progress": "በሂደት ላይ",
+      "inProgress": "በሂደት ላይ",
+      "done": "ተጠናቋል"
+    }
+  },
+  "contacts": {
+    "description": "በጎ ፈቃደኞችን፣ አቅራቢዎችን፣ ስፖንሰሮችን እና ሌሎች እውቂያዎችን ያስተዳድሩ",
+    "addContact": "እውቂያ ጨምር",
+    "editContact": "እውቂያ አርም",
+    "contactDetails": "የእውቂያ ዝርዝሮች",
+    "confirmDelete": "እርግጠኛ ነዎት ይህን እውቂያ መሰረዝ ይፈልጋሉ?",
+    "noContacts": "እስካሁን እውቂያዎች የሉም",
+    "noMatchingContacts": "ከፍለጋ መስፈርትዎ ጋር የሚዛመዱ እውቂያዎች የሉም",
+    "addFirstContact": "ለመጀመር የመጀመሪያ እውቂያዎን ይጨምሩ",
+    "searchPlaceholder": "በስም ወይም ኢሜይል ይፈልጉ...",
+    "rental": "ኪራይ",
+    "assignedCategories": "የተመደቡ ምድቦች",
+    "assignedTasks": "የተመደቡ ተግባራት",
+    "filters": {
+      "all": "ሁሉም"
+    },
+    "roles": {
+      "volunteer": "በጎ ፈቃደኛ",
+      "vendor": "አቅራቢ",
+      "sponsor": "ስፖንሰር",
+      "committee": "ኮሚቴ",
+      "external": "ውጫዊ"
+    },
+    "actions": {
+      "email": "ኢሜይል",
+      "call": "ደውል"
+    },
+    "form": {
+      "name": "ስም",
+      "namePlaceholder": "የእውቂያ ስም ያስገቡ",
+      "email": "ኢሜይል",
+      "emailPlaceholder": "የኢሜይል አድራሻ ያስገቡ",
+      "phone": "ስልክ",
+      "phonePlaceholder": "የስልክ ቁጥር ያስገቡ",
+      "role": "ሚና",
+      "categories": "ምድቦች",
+      "notes": "ማስታወሻዎች",
+      "notesPlaceholder": "ተጨማሪ ማስታወሻዎች ይጨምሩ...",
+      "isRentalContact": "ይህ እውቂያ የኪራይ እቃዎች/አገልግሎቶች ያቀርባል",
+      "create": "እውቂያ ፍጠር",
+      "errors": {
+        "nameRequired": "ስም ያስፈልጋል",
+        "emailRequired": "ኢሜይል ያስፈልጋል",
+        "emailInvalid": "እባክዎ ትክክለኛ የኢሜይል አድራሻ ያስገቡ"
+      }
+    },
+    "rentalItems": {
+      "title": "የኪራይ እቃዎች",
+      "add": "እቃ ጨምር",
+      "itemName": "የእቃ ስም",
+      "price": "ዋጋ",
+      "quantity": "ብዛት",
+      "total": "ድምር",
+      "noItems": "የኪራይ እቃዎች አልተጨመሩም"
+    }
+  },
+  "navigation": {
+    "settings": "ቅንብሮች"
+  },
+  "settings": {
+    "title": "ቅንብሮች",
+    "description": "የመተግበሪያ ምርጫዎችዎን እና የመለያ ቅንብሮችን ያስተዳድሩ።",
+    "generalSettings": "አጠቃላይ ቅንብሮች",
+    "notificationPreferences": "የማሳወቂያ ምርጫዎች",
+    "language": {
+      "title": "ቋንቋ",
+      "description": "ለመተግበሪያው የሚፈልጉትን ቋንቋ ይምረጡ።"
+    },
+    "theme": {
+      "title": "ገጽታ",
+      "description": "የሚፈልጉትን የቀለም ስርዓት ይምረጡ።",
+      "light": "ብርሃን",
+      "dark": "ጨለማ"
+    },
+    "notifications": {
+      "title": "ማሳወቂያዎች",
+      "description": "ማሳወቂያዎችን እንዴት እንደሚቀበሉ ያስተዳድሩ።",
+      "preferencesDescription": "የማሳወቂያ ምርጫዎችዎን እና የአስታዋሽ ቅንብሮችን ያዋቅሩ።",
+      "browserNotifications": "የአሳሽ ማሳወቂያዎች",
+      "permissionDenied": "የማሳወቂያ ፈቃድ ተከልክሏል። እባክዎ በአሳሽ ቅንብሮች ውስጥ ያንቁ።",
+      "permissionInfo": "ለተግባር አስታዋሾች እና ዝማኔዎች የአሳሽ ማሳወቂያዎችን ይቀበሉ።",
+      "enable": "ማሳወቂያዎችን አንቃ",
+      "enableDescription": "መተግበሪያው የአሳሽ ማሳወቂያዎችን እንዲልክልዎ ይፍቀዱ።",
+      "defaultReminderTime": "ነባሪ የአስታዋሽ ጊዜ",
+      "defaultReminderDescription": "አስታዋሾችን ለመቀበል ከዝግጅቶች በፊት ያለውን ነባሪ ጊዜ ያዘጋጁ።",
+      "reminder1Hour": "1 ሰዓት በፊት",
+      "reminder1Day": "1 ቀን በፊት",
+      "reminder1Week": "1 ሳምንት በፊት",
+      "sound": "የማሳወቂያ ድምጽ",
+      "soundDescription": "ማሳወቂያዎች ሲደርሱ ድምጽ ያጫውቱ።"
+    },
+    "about": {
+      "title": "ስለ",
+      "ecscsTitle": "ኢ.ሲ.ኤስ.ሲ.ኤስ",
+      "subtitle": "የኢትዮጵያ ማህበረሰብ ስፖርት እና ባህላዊ ማህበር",
+      "aboutTitle": "ስለ ኢ.ሲ.ኤስ.ሲ.ኤስ",
+      "aboutDescription": "የኢትዮጵያ ማህበረሰብ ስፖርት እና ባህላዊ ማህበር (ECSCS) የኢትዮጵያን ባህል፣ ስፖርት እና የማህበረሰብ ተሳትፎን ለማስተዋወቅ የተሰጠ የማህበረሰብ ድርጅት ነው።",
+      "tournamentInfo": "የ30 ዓመት ክብረ በዓል ውድድር",
+      "tournamentDescription": "በዓመታዊ የእግር ኳስ ውድድራችን 30 ዓመታት የማህበረሰብ ስፖርት እና ባህላዊ ዝግጅቶችን እያከበርን ነው። ይህ ልዩ የክብረ በዓል እትም ከመላው ማህበረሰብ ቡድኖችን አንድ ያደርጋል።",
+      "version": "ስሪት",
+      "copyright": "2024 ኢ.ሲ.ኤስ.ሲ.ኤስ። መብቱ በሕግ የተጠበቀ ነው።"
+    },
+    "dataManagement": {
+      "title": "የመረጃ አስተዳደር",
+      "description": "ለመጠባበቂያ እና ለማስተላለፍ መረጃዎን ወደ ውጭ ይላኩ ወይም ያስገቡ።",
+      "export": "መረጃ ወደ ውጭ ላክ",
+      "import": "መረጃ አስገባ",
+      "exportComingSoon": "የመረጃ ወደ ውጭ መላክ ባህሪ በቅርቡ ይመጣል!",
+      "importComingSoon": "የመረጃ ማስገባት ባህሪ በቅርቡ ይመጣል!",
+      "note": "ተግባራትዎን፣ እውቂያዎችዎን እና ቅንብሮችዎን ወደ JSON ፋይል ይላኩ፣ ወይም ከቀድሞ ምትኬ መረጃ ያስገቡ።"
+    }
+  },
+  "sharing": {
+    "shareEvent": "ዝግጅት አጋራ",
+    "shareEventDescription": "ይህን ዝግጅት ከጓደኞች ጋር ያጋሩ እና ወደ ቀን መቁጠሪያዎ ያክሉ።",
+    "shareOn": "በማህበራዊ ሚዲያ ላይ አጋራ",
+    "shareOnFacebook": "በፌስቡክ ላይ አጋራ",
+    "shareOnTwitter": "በትዊተር ላይ አጋራ",
+    "shareOnWhatsApp": "በዋትስአፕ ላይ አጋራ",
+    "shareOnLinkedIn": "በLinkedIn ላይ አጋራ",
+    "addToCalendar": "ወደ ቀን መቁጠሪያ ጨምር",
+    "addToYourCalendar": "ወደ ቀን መቁጠሪያዎ ያክሉ",
+    "copyLink": "የዝግጅት ሊንክ ቅዳ",
+    "copy": "ቅዳ",
+    "copied": "ተቀድቷል!",
+    "defaultMessage": "በ{{title}} ላይ በ{{date}} በ{{location}} ይቀላቀሉን! #ECSCS30Years",
+    "locationTBA": "ቦታ ይገለጻል"
+  },
+  "volunteers": {
+    "title": "በጎ ፈቃደኞች",
+    "pageTitle": "የበጎ ፈቃደኞች አስተዳደር",
+    "pageDescription": "በጎ ፈቃደኞችን ያስተዳድሩ እና ለስራ ፈረቃ ይመድቡ",
+    "count": "በጎ ፈቃደኛ(ዎች)",
+    "addVolunteer": "በጎ ፈቃደኛ ጨምር",
+    "editVolunteer": "በጎ ፈቃደኛ አርም",
+    "searchPlaceholder": "በስም፣ ኢሜይል ወይም ስልክ ይፈልጉ...",
+    "filterBySkills": "በችሎታ አጣራ",
+    "filterByAvailability": "በተገኝነት አጣራ",
+    "filterByDate": "በቀን አጣራ",
+    "filterByCategory": "በምድብ አጣራ",
+    "clearFilters": "ማጣሪያዎችን አጽዳ",
+    "filter": "አጣራ",
+    "noVolunteers": "በጎ ፈቃደኞች የሉም",
+    "noMatchingVolunteers": "ከማጣሪያዎችዎ ጋር የሚዛመዱ በጎ ፈቃደኞች የሉም",
+    "noVolunteersYet": "እስካሁን በጎ ፈቃደኞች አልተመዘገቡም",
+    "selectVolunteer": "በጎ ፈቃደኛ ይምረጡ",
+    "selectVolunteerDescription": "ዝርዝሮችን ለማየት ከዝርዝሩ በጎ ፈቃደኛ ይምረጡ",
+    "availability": {
+      "all": "ሁሉም",
+      "available": "ተገኝነት አለው",
+      "assigned": "ምደባ አለው"
+    },
+    "availableDays": "ቀን(ዎች) ይገኛል",
+    "assignedShifts": "ፈረቃ(ዎች)",
+    "personalInfo": "የግል መረጃ",
+    "name": "ሙሉ ስም",
+    "namePlaceholder": "ሙሉ ስምዎን ያስገቡ",
+    "email": "የኢሜይል አድራሻ",
+    "emailPlaceholder": "የኢሜይል አድራሻዎን ያስገቡ",
+    "phone": "የስልክ ቁጥር",
+    "phonePlaceholder": "የስልክ ቁጥርዎን ያስገቡ",
+    "skills": "ችሎታዎች",
+    "skillsDescription": "ሊያበረክቱ የሚችሏቸውን ችሎታዎች ይምረጡ",
+    "date": "ቀን",
+    "startTime": "የመጀመሪያ ሰዓት",
+    "endTime": "የመጨረሻ ሰዓት",
+    "addDate": "ቀን ጨምር",
+    "register": "እንደ በጎ ፈቃደኛ ይመዝገቡ",
+    "registering": "በመመዝገብ ላይ...",
+    "registrationSuccess": "ምዝገባ ተሳክቷል!",
+    "registrationSuccessMessage": "እንደ በጎ ፈቃደኛ ስለተመዘገቡ እናመሰግናለን። አሁን ለሚገኙ ፈረቃዎች መመዝገብ ይችላሉ።",
+    "registeredAs": "የተመዘገበው፦ {{email}}",
+    "registerAnother": "ሌላ በጎ ፈቃደኛ መዝግብ",
+    "registrationError": "በምዝገባ ወቅት ስህተት ተከስቷል። እባክዎ እንደገና ይሞክሩ።",
+    "availabilityDescription": "በጎ ፈቃደኛ ለመሆን የሚገኙበትን ቀናት እና ሰዓቶች ይጨምሩ",
+    "errors": {
+      "nameRequired": "ስም ያስፈልጋል",
+      "emailRequired": "ኢሜይል ያስፈልጋል",
+      "emailInvalid": "እባክዎ ትክክለኛ የኢሜይል አድራሻ ያስገቡ",
+      "emailExists": "ይህ ኢሜይል አስቀድሞ ተመዝግቧል",
+      "phoneRequired": "የስልክ ቁጥር ያስፈልጋል"
+    },
+    "availableShifts": "ያሉ ፈረቃዎች",
+    "availableShiftsDescription": "{{count}} ፈረቃ(ዎች) በጎ ፈቃደኞች ያስፈልጋቸዋል",
+    "allDates": "ሁሉም ቀናት",
+    "allCategories": "ሁሉም ምድቦች",
+    "noShiftsAvailable": "ያሉ ፈረቃዎች የሉም",
+    "noMatchingShifts": "ከማጣሪያዎችዎ ጋር የሚዛመዱ ፈረቃዎች የሉም",
+    "checkBackLater": "ለአዲስ ዕድሎች በኋላ ይመለሱ",
+    "volunteersSignedUp": "ተመዝግበዋል",
+    "signUp": "ይመዝገቡ",
+    "signedUp": "ተመዝግቧል",
+    "notRegisteredWarning": "ለፈረቃዎች ከመመዝገብዎ በፊት መመዝገብ አለብዎት። እባክዎ መጀመሪያ ምዝገባውን ያጠናቅቁ።",
+    "myShifts": "የእኔ ፈረቃዎች",
+    "myShiftsDescription": "{{count}} ፈረቃ(ዎች) ተመድቦልዎታል",
+    "upcomingShifts": "መጪ ፈረቃዎች",
+    "pastShifts": "ያለፉ ፈረቃዎች",
+    "shiftSoon": "በቅርቡ ይመጣል!",
+    "cancelSignup": "ሰርዝ",
+    "confirmCancelShift": "እርግጠኛ ነዎት ይህን የፈረቃ ምዝገባ መሰረዝ ይፈልጋሉ?",
+    "noShiftsAssigned": "የተመደቡ ፈረቃዎች የሉም",
+    "noShiftsAssignedDescription": "ያሉ ፈረቃዎችን ያስሱ እና ለመርዳት ይመዝገቡ።",
+    "notFound": "በጎ ፈቃደኛ አልተገኘም",
+    "notFoundDescription": "በዚህ ኢሜይል በጎ ፈቃደኛ ማግኘት አልቻልንም። እባክዎ መጀመሪያ ይመዝገቡ ወይም የኢሜይል አድራሻዎን ያረጋግጡ።",
+    "assignToShift": "ለፈረቃ መድብ",
+    "noAvailableTasks": "ለመመደብ ያሉ ተግባራት የሉም",
+    "registeredOn": "የተመዘገበው በ{{date}}",
+    "confirmDelete": "እርግጠኛ ነዎት {{name}}ን መሰረዝ ይፈልጋሉ? ይህ ድርጊት ሊቀለበስ አይችልም።",
+    "tabs": {
+      "register": "ይመዝገቡ",
+      "availableShifts": "ያሉ ፈረቃዎች",
+      "myShifts": "የእኔ ፈረቃዎች"
+    },
+    "publicPage": {
+      "title": "በጎ ፈቃደኛ ይሁኑ",
+      "subtitle": "የECSCS 30ኛ ዓመት ክብረ በዓል የእግር ኳስ ውድድርን ስኬታማ ለማድረግ ይቀላቀሉን! ጊዜዎ እና ችሎታዎ እውነተኛ ለውጥ ሊያመጣ ይችላል።",
+      "alreadyRegistered": "አስቀድመው ተመዝግበዋል? ኢሜይልዎን ይፈልጉ",
+      "enterEmail": "የተመዘገበውን የኢሜይል አድራሻዎን ያስገቡ",
+      "lookup": "ፈልግ",
+      "emailNotFound": "ኢሜይል አልተገኘም። እባክዎ መጀመሪያ ይመዝገቡ።",
+      "changeEmail": "ቀይር",
+      "registerTitle": "የበጎ ፈቃደኛ ምዝገባ",
+      "registerDescription": "እንደ በጎ ፈቃደኛ ለመመዝገብ ከዚህ በታች ያለውን ቅጽ ይሙሉ። በ * የተመለከቱ ሁሉም መስኮች አስፈላጊ ናቸው።",
+      "shiftsTitle": "ያሉ የበጎ ፈቃደኛ ፈረቃዎች",
+      "shiftsDescription": "ከእርስዎ የጊዜ ሰሌዳ እና ችሎታዎች ጋር የሚዛመዱ ፈረቃዎችን ያስሱ እና ይመዝገቡ።",
+      "registerFirst": "ለፈረቃዎች ለመመዝገብ ይመዝገቡ",
+      "registerFirstDescription": "ለበጎ ፈቃደኛ ፈረቃዎች ከመመዝገብዎ በፊት መመዝገብ ያስፈልግዎታል።",
+      "goToRegistration": "ወደ ምዝገባ ሂድ",
+      "myShiftsTitle": "የእርስዎ በጎ ፈቃደኛ ፈረቃዎች",
+      "myShiftsDescription": "የተመዘገቡባቸውን ፈረቃዎች ይመልከቱ እና ያስተዳድሩ።",
+      "verifyEmail": "ኢሜይልዎን ያስገቡ",
+      "verifyEmailDescription": "ፈረቃዎችዎን ለማየት እባክዎ ለመመዝገብ የተጠቀሙበትን የኢሜይል አድራሻ ያስገቡ።",
+      "footer": "ከECSCS ጋር ለመሥራት ፍላጎትዎ እናመሰግናለን!"
+    }
+  },
+  "budget": {
+    "title": "በጀት እና ፋይናንስ",
+    "description": "ገቢ፣ ወጪ እና ስፖንሰርሺፕ ይከታተሉ",
+    "overview": "አጠቃላይ እይታ",
+    "totalBudget": "ጠቅላላ በጀት",
+    "totalIncome": "ጠቅላላ ገቢ",
+    "totalExpenses": "ጠቅላላ ወጪ",
+    "balance": "ቀሪ ሂሳብ",
+    "categoryBudgets": "የምድብ በጀቶች",
+    "transactions": "ግብይቶች",
+    "sponsors": "ስፖንሰሮች",
+    "addTransaction": "ግብይት ጨምር",
+    "addCategory": "ጨምር",
+    "categoryName": "የምድብ ስም",
+    "amount": "መጠን",
+    "overBudget": "ከበጀት በላይ",
+    "remaining": "ቀሪ"
+  }
+}
