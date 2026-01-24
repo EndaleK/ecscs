@@ -6,6 +6,10 @@
   },
   "landing": {
     "nav": {
+      "about": "ስለ",
+      "highlights": "ድምቀቶች",
+      "info": "የዝግጅት መረጃ",
+      "volunteer": "በጎ ፈቃደኛ",
       "organizerLogin": "የአዘጋጅ መግቢያ"
     },
     "hero": {

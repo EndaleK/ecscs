@@ -6,6 +6,10 @@
   },
   "landing": {
     "nav": {
+      "about": "About",
+      "highlights": "Highlights",
+      "info": "Event Info",
+      "volunteer": "Volunteer",
       "organizerLogin": "Organizer Login"
     },
     "hero": {

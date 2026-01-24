@@ -44,21 +44,21 @@
   --color-warning: #FDD835;
   --color-danger: #D32F2F;
 
-  /* UI Colors - Clean & Professional */
-  --color-background: #FFFFFF;
+  /* UI Colors - Light Green Tinted */
+  --color-background: #F0F7F4;
   --color-foreground: #1A2B48;
-  --color-muted: #F5F5F5;
+  --color-muted: #E8F0EC;
   --color-muted-foreground: #5C6B7A;
-  --color-border: #E0E4E8;
-  --color-input: #E0E4E8;
+  --color-border: #D4E5DB;
+  --color-input: #D4E5DB;
   --color-ring: #1A2B48;
 
-  /* Card Colors */
-  --color-card: #FFFFFF;
+  /* Card Colors - Light Green Tinted */
+  --color-card: #F8FBF9;
   --color-card-foreground: #1A2B48;
 
-  /* Popover Colors */
-  --color-popover: #FFFFFF;
+  /* Popover Colors - Light Green Tinted */
+  --color-popover: #F8FBF9;
   --color-popover-foreground: #1A2B48;
 
   /* Destructive */
@@ -117,9 +117,9 @@
   );
 }
 
-/* Clean white background with subtle warmth */
+/* Clean light green background */
 .ethiopian-parchment {
-  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+  background: linear-gradient(180deg, #F0F7F4 0%, #E8F0EC 100%);
 }
 
 /* Anniversary gold corner accent */
@@ -161,8 +161,8 @@
 
 /* Clean card styling */
 .card-elevated {
-  background: #FFFFFF;
-  border: 1px solid #E0E4E8;
+  background: #F8FBF9;
+  border: 1px solid #D4E5DB;
   box-shadow: 0 1px 3px rgba(26, 43, 72, 0.06), 0 1px 2px rgba(26, 43, 72, 0.04);
 }
 
@@ -261,16 +261,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #F5F3F0;
+  background: #E8F0EC;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D1D5DB;
+  background: #B8D4C4;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9CA3AF;
+  background: #8FBD9F;
 }
 
 /* ===== SCHEDULE-X CALENDAR OVERRIDES ===== */
@@ -282,14 +282,14 @@
 
 .sx-react-calendar-wrapper .sx__calendar-wrapper {
   border-radius: 0.75rem;
-  border: 1px solid #E8E5E1;
-  background: #FFFFFF;
+  border: 1px solid #D4E5DB;
+  background: #F8FBF9;
   overflow: hidden;
 }
 
 .sx-react-calendar-wrapper .sx__calendar-header {
-  background: #FDFCFA;
-  border-bottom: 1px solid #E8E5E1;
+  background: #E8F0EC;
+  border-bottom: 1px solid #D4E5DB;
 }
 
 .sx-react-calendar-wrapper .sx__day--today {
@@ -307,15 +307,15 @@
 }
 
 .sx-react-calendar-wrapper .sx__time-grid-line {
-  border-color: #E8E5E1;
+  border-color: #D4E5DB;
 }
 
 .sx-react-calendar-wrapper .sx__week-header {
-  background: #F5F3F0;
+  background: #E8F0EC;
 }
 
 .sx-react-calendar-wrapper .sx__month-grid-day-header {
-  background: #F5F3F0;
+  background: #E8F0EC;
   color: #6B7280;
 }
 
@@ -348,12 +348,12 @@
 .border-\[\#DA121A\] { border-color: #B5564F !important; }
 
 /* Background adjustments */
-.bg-\[\#FFFEF7\] { background-color: #FDFCFA !important; }
-.bg-\[\#F5F0E8\] { background-color: #F5F3F0 !important; }
-.bg-\[\#FFFDF5\] { background-color: #FFFFFF !important; }
+.bg-\[\#FFFEF7\] { background-color: #F0F7F4 !important; }
+.bg-\[\#F5F0E8\] { background-color: #E8F0EC !important; }
+.bg-\[\#FFFDF5\] { background-color: #F8FBF9 !important; }
 
 /* Border adjustments */
-.border-\[\#E7DFD3\] { border-color: #E8E5E1 !important; }
+.border-\[\#E7DFD3\] { border-color: #D4E5DB !important; }
 
 /* Text adjustments */
 .text-\[\#78716C\] { color: #6B7280 !important; }

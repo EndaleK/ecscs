@@ -17,7 +17,7 @@ export function Header({ notificationCount = 0 }: HeaderProps) {
       {/* Subtle Ethiopian accent line */}
       <div className="ethiopian-accent-line"></div>
 
-      <div className="flex h-16 items-center justify-between bg-card px-4 lg:px-6 border-b border-border">
+      <div className="flex h-16 items-center justify-between bg-white/50 backdrop-blur-sm px-4 lg:px-6 border-b border-gray-200/50">
         {/* Left side - Logo and mobile menu */}
         <div className="flex items-center gap-4">
           {/* Mobile menu button */}

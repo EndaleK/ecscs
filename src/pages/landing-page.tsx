@@ -56,7 +56,7 @@ export function LandingPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/50 backdrop-blur-sm border-b border-gray-200/50">
         <div className="max-w-6xl mx-auto px-4 py-2 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img
@@ -64,13 +64,42 @@ export function LandingPage() {
               alt="ECSCS"
               className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
             />
-            <span className="text-base sm:text-lg font-semibold text-foreground hidden xs:inline">{t('header.title')}</span>
+            <span className="text-base sm:text-lg font-semibold text-foreground hidden sm:inline">{t('header.title')}</span>
           </div>
+
+          {/* Navigation Links - Hidden on mobile */}
+          <div className="hidden md:flex items-center gap-6">
+            <a
+              href="#about"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t('landing.nav.about')}
+            </a>
+            <a
+              href="#highlights"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t('landing.nav.highlights')}
+            </a>
+            <a
+              href="#info"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t('landing.nav.info')}
+            </a>
+            <Link
+              to="/volunteer-signup"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {t('landing.nav.volunteer')}
+            </Link>
+          </div>
+
           <div className="flex items-center gap-2 sm:gap-4">
             <LanguageSwitcher />
             <Link
               to="/dashboard"
-              className="text-xs sm:text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-xs sm:text-sm font-medium text-foreground hover:text-foreground/80 transition-colors px-3 py-1.5 rounded-md bg-primary/10 hover:bg-primary/20 border border-primary/20"
             >
               {t('landing.nav.organizerLogin')}
             </Link>
@@ -82,7 +111,7 @@ export function LandingPage() {
       <section className="relative pt-14 pb-4 sm:pt-16 md:pt-4 md:pb-6 overflow-hidden">
         {/* Ethiopian traditional pattern background */}
         <div
-          className="absolute inset-0 pointer-events-none opacity-30"
+          className="absolute inset-0 pointer-events-none opacity-40"
           style={{
             backgroundImage: 'url(/images/ethiopian-traditional-pattern.png)',
             backgroundRepeat: 'repeat',
@@ -139,11 +168,7 @@ export function LandingPage() {
       <EthiopianBorder />
 
       {/* About Section */}
-      <section id="about" className="relative py-12 sm:py-16 md:py-24 bg-muted/30 overflow-hidden">
-        {/* Subtle pattern background */}
-        <div className="absolute inset-0 pointer-events-none opacity-50">
-          <EthiopianPattern className="absolute inset-0" opacity={0.02} />
-        </div>
+      <section id="about" className="relative py-12 sm:py-16 md:py-24 overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
@@ -154,27 +179,40 @@ export function LandingPage() {
             </p>
           </div>
 
-          <div className="bg-card rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-border shadow-sm">
-            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-              <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
-                <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+          <div className="relative rounded-xl sm:rounded-2xl p-5 sm:p-8 overflow-hidden" style={{ background: 'linear-gradient(135deg, #1A2B48 0%, #2D4A6F 50%, #1A2B48 100%)' }}>
+            {/* Ethiopian diamond pattern overlay */}
+            <div
+              className="absolute inset-0 pointer-events-none opacity-20"
+              style={{
+                backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+                backgroundRepeat: 'repeat',
+                backgroundSize: '120px',
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/20 pointer-events-none" />
+
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-white/15 border border-white/20 flex-shrink-0">
+                  <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-white">
+                    {t('landing.about.historyTitle')}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/70">{t('landing.about.historySubtitle')}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-lg sm:text-xl font-semibold text-foreground">
-                  {t('landing.about.historyTitle')}
-                </h3>
-                <p className="text-xs sm:text-sm text-muted-foreground">{t('landing.about.historySubtitle')}</p>
-              </div>
+              <p className="text-sm sm:text-base text-white/85 leading-relaxed">
+                {t('landing.about.historyText')}
+              </p>
             </div>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-              {t('landing.about.historyText')}
-            </p>
           </div>
         </div>
       </section>
 
       {/* Event Highlights Section */}
-      <section className="py-12 sm:py-16 md:py-24">
+      <section id="highlights" className="py-12 sm:py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
@@ -189,17 +227,31 @@ export function LandingPage() {
             {eventHighlights.map((highlight, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-lg sm:rounded-xl p-4 sm:p-6 border border-border hover:border-primary/30 hover:shadow-md transition-all duration-300"
+                className="group relative rounded-lg sm:rounded-xl p-4 sm:p-6 overflow-hidden hover:shadow-lg transition-all duration-300"
+                style={{ background: 'linear-gradient(135deg, #1A2B48 0%, #2D4A6F 50%, #1A2B48 100%)' }}
               >
-                <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors mb-3 sm:mb-4">
-                  <highlight.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                {/* Ethiopian diamond pattern overlay */}
+                <div
+                  className="absolute inset-0 pointer-events-none opacity-15 group-hover:opacity-25 transition-opacity"
+                  style={{
+                    backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+                    backgroundRepeat: 'repeat',
+                    backgroundSize: '80px',
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/15 pointer-events-none" />
+
+                <div className="relative z-10">
+                  <div className="flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg bg-white/15 border border-white/20 group-hover:bg-white/20 transition-colors mb-3 sm:mb-4">
+                    <highlight.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+                  </div>
+                  <h3 className="text-sm sm:text-lg font-semibold text-white mb-1 sm:mb-2">
+                    {t(highlight.titleKey)}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/75">
+                    {t(highlight.descKey)}
+                  </p>
                 </div>
-                <h3 className="text-sm sm:text-lg font-semibold text-foreground mb-1 sm:mb-2">
-                  {t(highlight.titleKey)}
-                </h3>
-                <p className="text-xs sm:text-sm text-muted-foreground">
-                  {t(highlight.descKey)}
-                </p>
               </div>
             ))}
           </div>
@@ -210,11 +262,7 @@ export function LandingPage() {
       <EthiopianBorder />
 
       {/* Key Information Section */}
-      <section className="relative py-12 sm:py-16 md:py-24 bg-primary/5 overflow-hidden">
-        {/* Subtle pattern background */}
-        <div className="absolute inset-0 pointer-events-none">
-          <EthiopianPattern className="absolute inset-0" opacity={0.03} />
-        </div>
+      <section id="info" className="relative py-12 sm:py-16 md:py-24 overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
@@ -223,20 +271,59 @@ export function LandingPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-            <div className="bg-card rounded-lg sm:rounded-xl p-5 sm:p-6 border border-border text-center">
-              <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-primary mx-auto mb-3 sm:mb-4" />
-              <h3 className="font-semibold text-foreground mb-1 sm:mb-2">{t('landing.info.when.title')}</h3>
-              <p className="text-muted-foreground text-xs sm:text-sm">{t('landing.info.when.details')}</p>
+            <div className="relative rounded-lg sm:rounded-xl p-5 sm:p-6 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #1A2B48 0%, #2D4A6F 50%, #1A2B48 100%)' }}>
+              <div
+                className="absolute inset-0 pointer-events-none opacity-15"
+                style={{
+                  backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+                  backgroundRepeat: 'repeat',
+                  backgroundSize: '80px',
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/15 pointer-events-none" />
+              <div className="relative z-10">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                  <Calendar className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                </div>
+                <h3 className="font-semibold text-white mb-1 sm:mb-2">{t('landing.info.when.title')}</h3>
+                <p className="text-white/75 text-xs sm:text-sm">{t('landing.info.when.details')}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg sm:rounded-xl p-5 sm:p-6 border border-border text-center">
-              <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-accent mx-auto mb-3 sm:mb-4" />
-              <h3 className="font-semibold text-foreground mb-1 sm:mb-2">{t('landing.info.where.title')}</h3>
-              <p className="text-muted-foreground text-xs sm:text-sm">{t('landing.info.where.details')}</p>
+            <div className="relative rounded-lg sm:rounded-xl p-5 sm:p-6 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #1A2B48 0%, #2D4A6F 50%, #1A2B48 100%)' }}>
+              <div
+                className="absolute inset-0 pointer-events-none opacity-15"
+                style={{
+                  backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+                  backgroundRepeat: 'repeat',
+                  backgroundSize: '80px',
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/15 pointer-events-none" />
+              <div className="relative z-10">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                  <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                </div>
+                <h3 className="font-semibold text-white mb-1 sm:mb-2">{t('landing.info.where.title')}</h3>
+                <p className="text-white/75 text-xs sm:text-sm">{t('landing.info.where.details')}</p>
+              </div>
             </div>
-            <div className="bg-card rounded-lg sm:rounded-xl p-5 sm:p-6 border border-border text-center">
-              <Star className="w-6 h-6 sm:w-8 sm:h-8 text-secondary mx-auto mb-3 sm:mb-4" />
-              <h3 className="font-semibold text-foreground mb-1 sm:mb-2">{t('landing.info.what.title')}</h3>
-              <p className="text-muted-foreground text-xs sm:text-sm">{t('landing.info.what.details')}</p>
+            <div className="relative rounded-lg sm:rounded-xl p-5 sm:p-6 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #1A2B48 0%, #2D4A6F 50%, #1A2B48 100%)' }}>
+              <div
+                className="absolute inset-0 pointer-events-none opacity-15"
+                style={{
+                  backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+                  backgroundRepeat: 'repeat',
+                  backgroundSize: '80px',
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/5 to-black/15 pointer-events-none" />
+              <div className="relative z-10">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-white/15 border border-white/20 flex items-center justify-center">
+                  <Star className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                </div>
+                <h3 className="font-semibold text-white mb-1 sm:mb-2">{t('landing.info.what.title')}</h3>
+                <p className="text-white/75 text-xs sm:text-sm">{t('landing.info.what.details')}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -248,29 +335,33 @@ export function LandingPage() {
       {/* Volunteer CTA Section */}
       <section className="py-12 sm:py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="relative bg-gradient-to-br from-primary to-primary/80 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center overflow-hidden">
-            {/* Ethiopian pattern overlay on CTA */}
-            <div className="absolute inset-0 pointer-events-none">
-              <EthiopianPattern className="absolute inset-0" opacity={0.08} />
-            </div>
-            {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-24 sm:w-40 h-24 sm:h-40 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-20 sm:w-32 h-20 sm:h-32 bg-white/10 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
+          <div className="relative rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-12 text-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #1A2B48 0%, #2D4A6F 50%, #1A2B48 100%)' }}>
+            {/* Ethiopian diamond pattern overlay */}
+            <div
+              className="absolute inset-0 pointer-events-none opacity-20"
+              style={{
+                backgroundImage: 'url(/images/ethiopian-traditional-pattern-color.png)',
+                backgroundRepeat: 'repeat',
+                backgroundSize: '120px',
+              }}
+            />
+            {/* Gradient overlay for depth */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/20 pointer-events-none" />
 
             <div className="relative z-10">
               <div className="flex justify-center mb-4 sm:mb-6">
-                <div className="p-3 sm:p-4 bg-white/20 rounded-full">
+                <div className="p-3 sm:p-4 bg-white/15 rounded-full border border-white/20">
                   <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
               </div>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">
                 {t('landing.volunteer.title')}
               </h2>
-              <p className="text-sm sm:text-base text-white/90 max-w-xl mx-auto mb-6 sm:mb-8">
+              <p className="text-sm sm:text-base text-white/85 max-w-xl mx-auto mb-6 sm:mb-8">
                 {t('landing.volunteer.description')}
               </p>
               <Link to="/volunteer-signup">
-                <Button size="lg" variant="secondary" className="gap-2">
+                <Button size="lg" className="gap-2 bg-secondary hover:bg-secondary-dark text-white">
                   {t('landing.volunteer.cta')}
                   <ArrowRight className="w-4 h-4" />
                 </Button>
