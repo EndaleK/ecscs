@@ -12,7 +12,7 @@ import {
   Globe
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { EthiopianPattern, EthiopianBorder } from '@/components/ui/ethiopian-pattern';
+import { EthiopianBorder } from '@/components/ui/ethiopian-pattern';
 import { LanguageSwitcher } from '@/components/layout/language-switcher';
 
 // Soccer ball icon for highlight cards
